@@ -1,0 +1,76 @@
+/*************************************************************************
+ *
+ *  OpenOffice.org - a multi-platform office productivity suite
+ *
+ *  $RCSfile: submenu.hrc,v $
+ *
+ *  $Revision: 1.2 $
+ *
+ *  last change: $Author: rt $ $Date: 2005/09/07 20:17:13 $
+ *
+ *  The Contents of this file are made available subject to
+ *  the terms of GNU Lesser General Public License Version 2.1.
+ *
+ *
+ *    GNU Lesser General Public License Version 2.1
+ *    =============================================
+ *    Copyright 2005 by Sun Microsystems, Inc.
+ *    901 San Antonio Road, Palo Alto, CA 94303, USA
+ *
+ *    This library is free software; you can redistribute it and/or
+ *    modify it under the terms of the GNU Lesser General Public
+ *    License version 2.1, as published by the Free Software Foundation.
+ *
+ *    This library is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *    Lesser General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Lesser General Public
+ *    License along with this library; if not, write to the Free Software
+ *    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ *    MA  02111-1307  USA
+ *
+ ************************************************************************/
+
+//	IDs fuer Untermenues
+
+//	1 ist nicht erlaubt ????
+#define SUBMENU_EDIT		2
+#define SUBMENU_FILL		3
+#define SUBMENU_DELBREAK	4
+#define SUBMENU_VIEW		5
+#define SUBMENU_INSERT		6
+#define SUBMENU_INSBREAK	7
+#define SUBMENU_NAME		8
+#define SUBMENU_INSOBJ		9
+#define SUBMENU_DATA		10
+#define SUBMENU_FILTER		11
+#define SUBMENU_OUTLINE		12
+#define SUBMENU_PIVOT		13
+#define SUBMENU_EXTRA		14
+#define SUBMENU_AUDIT		15
+#define SUBMENU_PROTECT		16
+#define SUBMENU_ROW			17
+#define SUBMENU_COL			18
+#define SUBMENU_TAB			19
+#define SUBMENU_MERGE		20
+#define SUBMENU_AREA		21
+#define SUBMENU_MIRROR		22
+#define SUBMENU_OBJARRANGE	23
+#define SUBMENU_ANCHOR		24
+#define SUBMENU_POPARRANGE	25
+#define SUBMENU_OLEARRANGE	26
+#define SUBMENU_MAIL		27
+#define SUBMENU_OPTIONS		28
+#define SUBMENU_TOOLBARS	29
+#define SUBMENU_GRAPHIC		30
+#define SUBMENU_SPELLING	31
+#define SUBMENU_CELLCONT	32
+#define SUBMENU_OBJMIRROR	33
+#define SUBMENU_OBJALIGN	34
+#define SUBMENU_OBJANCHOR	35
+#define SUBMENU_SENDTO		36
+#define SUBMENU_CHANGES		37
+#define SUBMENU_EDIT_TABLE  38
+#define MN_TEMPLATES        39

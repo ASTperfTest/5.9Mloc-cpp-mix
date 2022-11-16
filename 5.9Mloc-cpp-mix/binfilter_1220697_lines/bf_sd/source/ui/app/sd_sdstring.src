@@ -1,0 +1,707 @@
+/*************************************************************************
+ *
+ *  OpenOffice.org - a multi-platform office productivity suite
+ *
+ *  $RCSfile: sd_sdstring.src,v $
+ *
+ *  $Revision: 1.6 $
+ *
+ *  last change: $Author: rt $ $Date: 2006/10/27 18:15:31 $
+ *
+ *  The Contents of this file are made available subject to
+ *  the terms of GNU Lesser General Public License Version 2.1.
+ *
+ *
+ *    GNU Lesser General Public License Version 2.1
+ *    =============================================
+ *    Copyright 2005 by Sun Microsystems, Inc.
+ *    901 San Antonio Road, Palo Alto, CA 94303, USA
+ *
+ *    This library is free software; you can redistribute it and/or
+ *    modify it under the terms of the GNU Lesser General Public
+ *    License version 2.1, as published by the Free Software Foundation.
+ *
+ *    This library is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *    Lesser General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Lesser General Public
+ *    License along with this library; if not, write to the Free Software
+ *    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ *    MA  02111-1307  USA
+ *
+ ************************************************************************/
+#define NO_LOCALIZE_EXPORT
+
+#include "sdstring.hrc"
+String STR_GRADIENT
+{
+	Text [ de ] = "Farbverlauf" ;
+	Text [ en-US ] = "Gradient" ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "Gradação";
+	Text[ ru ] = "Градиент";
+	Text[ el ] = "Διαβάθμιση χρώματος";
+	Text[ nl ] = "Kleurovergangen";
+	Text[ fr ] = "Dégradé";
+	Text[ es ] = "Gradiente";
+	Text[ fi ] = "Liukuvärjäys";
+	Text[ ca ] = "Gradient de color";
+	Text[ it ] = "Sfumatura";
+	Text[ da ] = "Farvegraduering";
+	Text[ sv ] = "Färggradient";
+	Text[ pl ] = "Gradient";
+	Text[ pt-BR ] = "Gradiente";
+	Text[ th ] = "ไล่ระดับสี";
+	Text[ ja ] = "グラデーション";
+	Text[ ko ] = "그라디언트";
+	Text[ zh-CN ] = "彩色图案";
+	Text[ zh-TW ] = "彩色圖案";
+	Text[ tr ] = "Gradyan";
+	Text[ hi-IN ] = "ग्रेडिऐन्ट्";
+	Text[ ar ] = "تدرج اللون";
+	Text[ he ] = "Farbverlauf";
+};
+String STR_DESC_GRADIENT
+{
+	/* ### ACHTUNG: Neuer Text in Resource? Geben Sie hier bitte den Namen f�r den neuen Farbverlauf ein: : Geben Sie hier bitte den Namen f�r den neuen Farbverlauf ein: */
+	Text [ de ] = "Geben Sie hier bitte den Namen für den neuen Farbverlauf ein:" ;
+	Text [ en-US ] = "Please enter a name for the new gradient:" ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "Introduza um nome para a nova gradação de cor:";
+	Text[ ru ] = "Введите имя нового градиента:";
+	Text[ el ] = "Παρακαλώ εισάγετε το όνομα για τη νέα διαβάθμιση χρώματος:";
+	Text[ nl ] = "Typ een naam voor de nieuwe kleurovergangen:";
+	Text[ fr ] = "Veuillez saisir un nom pour le nouveau dégradé :";
+	Text[ es ] = "Introduzca aquí un nombre para el nuevo gradiente de color:";
+	Text[ fi ] = "Määritä uuden liukuvärjäyksen nimi:";
+	Text[ ca ] = "Introdueixi aquí el nom pel nou gradient de color:";
+	Text[ it ] = "Digitate un nome per la nuova sfumatura:";
+	Text[ da ] = "Indtast venligst et navn til den nye farvegraduering:";
+	Text[ sv ] = "Mata in namnet för den nya färggradienten här:";
+	Text[ pl ] = "Podaj nazwę nowego gradientu:";
+	Text[ pt-BR ] = "Indique um nome para o novo gradiente de cor:";
+	Text[ th ] = "กรุณาใส่ชื่อตัวไล่ระดับสีใหม่:";
+	Text[ ja ] = "ここに新しいグラデーションの名前を入力します:";
+	Text[ ko ] = "새 그라디언트의 이름을 여기에 입력하십시오:";
+	Text[ zh-CN ] = "请您输入新彩色图案的名称：";
+	Text[ zh-TW ] = "請您輸入新彩色圖案的名稱：";
+	Text[ tr ] = "Yeni gradyan için bir ad girin:";
+	Text[ hi-IN ] = "कृपया नया ग्रेडिऐन्ट् केलिए एक नाम को प्रविष्ट कीजिए:";
+	Text[ ar ] = "الرجاء إدخال اسم التدرج الجديد للون:";
+	Text[ he ] = "Geben Sie hier bitte den Namen für den neuen Farbverlauf ein:";
+};
+String STR_DEL_GRADIENT
+{
+	/* ### ACHTUNG: Neuer Text in Resource? Farbverlauf l�schen : Farbverlauf l�schen */
+	Text [ de ] = "Farbverlauf löschen" ;
+	Text [ en-US ] = "Delete gradient" ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "Eliminar gradação";
+	Text[ ru ] = "Удалить градиент";
+	Text[ el ] = "Διαγραφή διαβάθμιση χρώματος";
+	Text[ nl ] = "Kleurovergangen wissen";
+	Text[ fr ] = "Supprimer le dégradé";
+	Text[ es ] = "Borrar gradiente";
+	Text[ fi ] = "Poista liukuvärjäys";
+	Text[ ca ] = "Elimina el gradient";
+	Text[ it ] = "Elimina sfumatura";
+	Text[ da ] = "Slet farvegraduering";
+	Text[ sv ] = "Radera färggradient";
+	Text[ pl ] = "Usuń gradient";
+	Text[ pt-BR ] = "Excluir gradiente";
+	Text[ th ] = "ลบตัวไล่ระดับสี";
+	Text[ ja ] = "グラデーションの削除";
+	Text[ ko ] = "그라디언트 삭제";
+	Text[ zh-CN ] = "删除彩色图案";
+	Text[ zh-TW ] = "刪除彩色圖案";
+	Text[ tr ] = "Gradyanı sil";
+	Text[ hi-IN ] = "ग्रेडिऐन्ट् मिटाओ";
+	Text[ ar ] = "حذف تدرج اللون";
+	Text[ he ] = "Farbverlauf löschen";
+};
+String STR_ASK_DEL_GRADIENT
+{
+	/* ### ACHTUNG: Neuer Text in Resource? Soll der Farbverlauf wirklich gel�scht werden? : Soll der Farbverlauf wirklich gel�scht werden? */
+	Text [ de ] = "Soll der Farbverlauf wirklich gelöscht werden?" ;
+	Text [ en-US ] = "Do you want to delete the gradient?" ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "Deseja realmente eliminar a gradação?";
+	Text[ ru ] = "Удалить градиент?";
+	Text[ el ] = "Θέλετε πραγματικά να γίνει διαγραφή της διαβάθμισης χρώματος;";
+	Text[ nl ] = "Wilt u de kleurovergangen werkelijk wissen?";
+	Text[ fr ] = "Confirmez-vous la suppression du dégradé ?";
+	Text[ es ] = "¿Desea realmente borrar el gradiente de color?";
+	Text[ fi ] = "Haluatko poistaa liukuvärjäyksen?";
+	Text[ ca ] = "Voleu eliminar realment el gradient de color?";
+	Text[ it ] = "Eliminare la sfumatura?";
+	Text[ da ] = "Er du sikker på, at du vil slette farvegradueringen?";
+	Text[ sv ] = "Skall färggradienten verkligen raderas?";
+	Text[ pl ] = "Czy chcesz usunąć gradient?";
+	Text[ pt-BR ] = "Deseja excluir o gradiente?";
+	Text[ th ] = "คุณต้องการลบตัวไล่ระดับสีหรือไม่?";
+	Text[ ja ] = "グラデーションを削除してかまいませんか。";
+	Text[ ko ] = "그라디언트를 정말로 삭제하시겠습니까?";
+	Text[ zh-CN ] = "真的要删除这个彩色图案吗？";
+	Text[ zh-TW ] = "您真要刪除這個彩色圖案？";
+	Text[ tr ] = "Gradyanı gerçekten silmek istiyor musunuz?";
+	Text[ hi-IN ] = "आप ग्रेडिऐन्ट् को मिटाना चाहते है?";
+	Text[ ar ] = "هل تريد بالفعل حذف تدرج اللون؟";
+	Text[ he ] = "Soll der Farbverlauf wirklich gelöscht werden?";
+};
+String STR_ASK_CHANGE_GRADIENT
+{
+	/* ### ACHTUNG: Neuer Text in Resource? Der Farbverlauf wurde ge�ndert und nicht gesichert. \nSie k�nnen den selektierten Farbverlauf �ndern \noder einen neuen Farbverlauf hinzuf�gen. : Der Farbverlauf wurde ge�ndert und nicht gesichert. \nSie k�nnen den selektierten Farbverlauf �ndern \noder einen neuen Farbverlauf hinzuf�gen. */
+	Text [ de ] = "Der Farbverlauf wurde geändert und nicht gesichert. \nSie können den selektierten Farbverlauf ändern \noder einen neuen Farbverlauf hinzufügen." ;
+	Text [ en-US ] = "The gradient was modified without saving. \nYou can change the selected gradient \nor add a new one." ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "A gradação da cor foi modificada sem ter sido guardada. Poderá modificar a gradação seleccionada ou adicionar uma nova.";
+	Text[ ru ] = "Градиент был изменен, но не сохранен. \nВы можете изменить выбранный градиент \nили добавить новый.";
+	Text[ el ] = "Η διαβάθμιση χρώματος τροποποιήθηκε χωρίς να αποθηκευτεί. \nΜπορείτε να αλλάξετε την επιλεγμένη διαβάθμιση \\ή να προσθέσετε μια νέα.";
+	Text[ nl ] = "De kleurovergangen is zonder opslaan gewijzigd. \nU kunt de geselecteerde kleurovergangen wijzigen \nof nieuwe kleurovergangen toevoegen.";
+	Text[ fr ] = "Les dernières modifications apportées au dégradé n'ont pas été sauvegardées. \nVous pouvez modifier le dégradé sélectionné ou en ajouter un nouveau.";
+	Text[ es ] = "El gradiente de color ha sido modificado sin guardar.\nUsted puede modificar el gradiente seleccionado\no añadir uno nuevo.";
+	Text[ fi ] = "Liukuvärjäystä ei tallennettu muokkauksen jälkeen. \nVoit vaihtaa valitun liukuvärjäyksen\n tai lisätä uuden.";
+	Text[ ca ] = "El gradient de color s'ha modificat i no s'ha guardat.\nEs pot modificar el gradient seleccionat\no afegir-ne un de nou.";
+	Text[ it ] = "La sfumatura è stata modificata senza essere salvata.\nPotete modificare la sfumatura o aggiungerne una nuova";
+	Text[ da ] = "Farvegradueringen er blevet ændret, men ikke gemt. \nDu kan ændre den markerede farvegraduering \neller tilføje en ny.";
+	Text[ sv ] = "Färggradienten ändrades utan att sparas.\nDu kan ändra den markerade färggradienten eller lägga\ntill en ny färggradient.";
+	Text[ pl ] = "Gradient został zmieniony, lecz nie zapisany. \nMożesz zmienić zaznaczony gradient \nlub dodać nowy.";
+	Text[ pt-BR ] = "O gradiente de cor foi modificado sem ter sido salvo.\nV. poderá modificar o gradiente selecionado\nou adicionar um novo.";
+	Text[ th ] = "ดัดแปลงตัวไล่ระดับสีโดยไม่ได้บันทึกไว้. \nคุณต้องการเปลี่ยนตัวไล่ระดับสีที่เลือก \nหรือเพิ่มตัวไล่ระดับสีใหม่หรือไม่";
+	Text[ ja ] = "グラデーションが変更され保存されていません。\n選択したグラデーションを変更するか、 \n新しいグラデーションを追加することができます。";
+	Text[ ko ] = "그라디언트가 변경되었으나 저장되지 않았습니다.\n선택된 그라디언트를 수정하거나 새 그라디언트를 추가할 수 있습니다.";
+	Text[ zh-CN ] = "彩色图案已经被更改，但是尚未被保存。 \n您能够更改选中的彩色图案\n或者新增一个彩色图案。";
+	Text[ zh-TW ] = "彩色圖案已經變更，但是尚未被儲存。 \n您能夠變更選取的彩色圖案\n或者新增一個彩色圖案。";
+	Text[ tr ] = "Gradyan değiştirildi, ancak kaydedilmedi. \nSeçilen gradyanı değiştirebilir \nya da yeni bir gradyan ekleyebilirsiniz.";
+	Text[ hi-IN ] = "संचित किये बिना ग्रेडिऐन्ट् को सुधार किया है । \nचुने हुए ग्रेडिऐन्ट् को सुधार सकते है \nअथवा एक नया ग्रेडिऐन्ट् को जोड़ सकते है ।";
+	Text[ ar ] = "لم يتم حفظ تدرج اللون بعد تغييره. \nيمكنك تغيير تدرج اللون المحدد، \nأو إضافة تدرج لون جديد.";
+	Text[ he ] = "Der Farbverlauf wurde geändert und nicht gesichert. \nSie können den selektierten Farbverlauf ändern \noder einen neuen Farbverlauf hinzufügen.";
+};
+String STR_BITMAP
+{
+	Text [ de ] = "Bitmap" ;
+	Text [ en-US ] = "Bitmap" ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "Bitmap";
+	Text[ ru ] = "Растр";
+	Text[ el ] = "Bitmap";
+	Text[ nl ] = "Bitmap";
+	Text[ fr ] = "Bitmap";
+	Text[ es ] = "Bitmap";
+	Text[ fi ] = "Bittikartta";
+	Text[ ca ] = "Mapa de bits";
+	Text[ it ] = "Stile bitmap";
+	Text[ da ] = "Bitmap";
+	Text[ sv ] = "Bitmap";
+	Text[ pl ] = "Mapa bitowa";
+	Text[ pt-BR ] = "Bitmap";
+	Text[ th ] = "บิทแมป";
+	Text[ ja ] = "ビットマップ";
+	Text[ ko ] = "비트맵";
+	Text[ zh-CN ] = "位图";
+	Text[ zh-TW ] = "點陣圖";
+	Text[ tr ] = "Bit eşlem";
+	Text[ hi-IN ] = "बिटमॉप्";
+	Text[ ar ] = "صورة نقطية";
+	Text[ he ] = "Bitmap";
+};
+String STR_DESC_NEW_BITMAP
+{
+	/* ### ACHTUNG: Neuer Text in Resource? Geben Sie hier bitte den Namen f�r die neue Bitmap ein: : Geben Sie hier bitte den Namen f�r die neue Bitmap ein: */
+	Text [ de ] = "Geben Sie hier bitte den Namen für die neue Bitmap ein:" ;
+	Text [ en-US ] = "Please enter a name for the new bitmap:" ;
+	Text [ x-comment ] = ":";
+	Text[ pt ] = "Introduza um nome para o novomapa de bits:";
+	Text[ ru ] = "Введите имя нового растра:";
+	Text[ el ] = "Παρακαλώ εισάγετε το όνομα για το νέο bitmap:";
+	Text[ nl ] = "Typ een naam voor de nieuwe bitmap in:";
+	Text[ fr ] = "Veuillez saisir un nom pour le nouveau bitmap :";
+	Text[ es ] = "Introduzca aquí un nombre para la nueva bitmap:";
+	Text[ fi ] = "Kirjoita uuden bittikartan nimi:";
+	Text[ ca ] = "Introdueix aquí el nom per al nou bitmap:";
+	Text[ it ] = "Inserisci un nome per la nuova bitmap:";
+	Text[ da ] = "Indtast venligst et navn til den nye bitmap:";
+	Text[ sv ] = "Ange namn för den nya bitmappen:";
+	Text[ pl ] = "Podaj nazwę nowej mapy bitowej:";
+	Text[ pt-BR ] = "Indique um nome para o novo bitmap:";
+	Text[ th ] = "กรุณาใส่ชื่อบิทแมปใหม่:";
+	Text[ ja ] = "ここに新しいビットマップの名前を入力します:";
+	Text[ ko ] = "새 비트맵의 이름을 여기에 입력하십시오:";
+	Text[ zh-CN ] = "请您输入一个新位图的名称：";
+	Text[ zh-TW ] = "請您輸入一個新點陣圖的名稱：";
+	Text[ tr ] = "Yeni bit eşlem için bir ad girin:";
+	Text[ hi-IN ] = "कृपया नया बिटमॉप् केलिए एक नाम को प्रविष्ट कीजिए:";
+	Text[ ar ] = "من فضلك اكتب اسم الصورة النقطية الجديدة هنا:";
+	Text[ he ] = "Geben Sie hier bitte den Namen für die neue Bitmap ein:";
+};
+String STR_DESC_EXT_BITMAP
+{
+	/* ### ACHTUNG: Neuer Text in Resource? Geben Sie hier bitte den Namen f�r die externe Bitmap ein: : Geben Sie hier bitte den Namen f�r die externe Bitmap ein: */
+	Text [ de ] = "Geben Sie hier bitte den Namen für die externe Bitmap ein:" ;
+	Text [ en-US ] = "Please enter the name of the external bitmap:" ;
+	Text [ x-comment ] = ":";
+	Text[ pt ] = "Introduza um nome para o mapa de bits externo:";
+	Text[ ru ] = "Введите имя внешнего растра:";
+	Text[ el ] = "Παρακαλώ εισάγετε το όνομα για το εξωτερικό bitmap:";
+	Text[ nl ] = "Geef een naam voor de externe bitmap op:";
+	Text[ fr ] = "Veuillez saisir un nom pour le bitmap externe :";
+	Text[ es ] = "Introduzca aquí un nombre para la bitmap externa:";
+	Text[ fi ] = "Määritä ulkoisen bittikartan nimi:";
+	Text[ ca ] = "Introdueix aquí el nom per al bitmap extern:";
+	Text[ it ] = "Inserisci un nome per la bitmap esterna:";
+	Text[ da ] = "Indtast venligst et navn til den eksterne bitmap:";
+	Text[ sv ] = "Ange namn för extern bitmap:";
+	Text[ pl ] = "Podaj nazwę zewnętrznej mapy bitowej:";
+	Text[ pt-BR ] = "Indique um nome para o bitmap externo:";
+	Text[ th ] = "กรุณาใส่ชื่อบิทแมปภายนอก:";
+	Text[ ja ] = "ここに外部ビットマップの名前を入力します:";
+	Text[ ko ] = "외부 비트맵의 이름을 여기에 입력하십시오:";
+	Text[ zh-CN ] = "请您输入一个外来位图的名称：";
+	Text[ zh-TW ] = "請您輸入一個外來點陣圖的名稱：";
+	Text[ tr ] = "Harici bit eşlemin adını girin:";
+	Text[ hi-IN ] = "कृपया बाहरी बिटमॉप् केलिए एक नाम को प्रविष्ट कीजिए:";
+	Text[ ar ] = "من فضلك اكتب اسم الصورة النقطية الخارجية هنا:";
+	Text[ he ] = "Geben Sie hier bitte den Namen für die externe Bitmap ein:";
+};
+String STR_DEL_BITMAP
+{
+	/* ### ACHTUNG: Neuer Text in Resource? Bitmap l�schen : Bitmap l�schen */
+	Text [ de ] = "Bitmap löschen" ;
+	Text [ en-US ] = "Delete bitmap" ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "Eliminar mapa de bits";
+	Text[ ru ] = "Удалить растр";
+	Text[ el ] = "Διαγραφή bitmap";
+	Text[ nl ] = "Bitmap wissen";
+	Text[ fr ] = "Supprimer le bitmap";
+	Text[ es ] = "Borrar bitmap";
+	Text[ fi ] = "Poista bittikartta";
+	Text[ ca ] = "Suprimeix el mapa de bits";
+	Text[ it ] = "Elimina bitmap";
+	Text[ da ] = "Slet bitmap";
+	Text[ sv ] = "Radera bitmap";
+	Text[ pl ] = "Usuń mapę bitową";
+	Text[ pt-BR ] = "Excluir bitmap";
+	Text[ th ] = "ลบบิทแมป";
+	Text[ ja ] = "ビットマップの削除";
+	Text[ ko ] = "비트맵 삭제";
+	Text[ zh-CN ] = "删除位图";
+	Text[ zh-TW ] = "刪除點陣圖";
+	Text[ tr ] = "Bit eşlemi sil";
+	Text[ hi-IN ] = "बिटमॉप् मिटाओ";
+	Text[ ar ] = "حذف صورة نقطية";
+	Text[ he ] = "Bitmap löschen";
+};
+String STR_ASK_DEL_BITMAP
+{
+	/* ### ACHTUNG: Neuer Text in Resource? Soll die Bitmap wirklich gel�scht werden? : Soll die Bitmap wirklich gel�scht werden? */
+	Text [ de ] = "Soll die Bitmap wirklich gelöscht werden?" ;
+	Text [ en-US ] = "Do you want to delete the bitmap?" ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "Deseja realmente eliminar o bitmap?";
+	Text[ ru ] = "Удалить выбранный растр?";
+	Text[ el ] = "Θέλετε πραγματικά να διαγραφεί το bitmap;";
+	Text[ nl ] = "Wilt u de bitmap werkelijk wissen?";
+	Text[ fr ] = "Confirmez-vous la suppression du bitmap ?";
+	Text[ es ] = "¿Desea realmente borrar el bitmap?";
+	Text[ fi ] = "Haluatko poistaa bittikartan?";
+	Text[ ca ] = "Voleu suprimir el mapa de bits?";
+	Text[ it ] = "Eliminare la bitmap?";
+	Text[ da ] = "Er du sikker på, at du vil slette denne bitmap?";
+	Text[ sv ] = "Vill du verkligen radera bitmappen?";
+	Text[ pl ] = "Czy chcesz usunąć mapę bitową?";
+	Text[ pt-BR ] = "Deseja excluir o bitmap?";
+	Text[ th ] = "คุณต้องการลบบิทแมปหรือไม่?";
+	Text[ ja ] = "ビットマップを削除してかまいませんか。";
+	Text[ ko ] = "비트맵을 정말로 삭제하시겠습니까?";
+	Text[ zh-CN ] = "真要删除这个位图吗？";
+	Text[ zh-TW ] = "您真要刪除這個點陣圖？";
+	Text[ tr ] = "Bit eşlemi gerçekten silmek istiyor musunuz?";
+	Text[ hi-IN ] = "आप बिटमॉप को मिटाना चाहते है?";
+	Text[ ar ] = "هل تريد بالفعل حذف الصورة النقطية؟";
+	Text[ he ] = "Soll die Bitmap wirklich gelöscht werden?";
+};
+String STR_ASK_CHANGE_BITMAP
+{
+	/* ### ACHTUNG: Neuer Text in Resource? Die Bitmap wurde ge�ndert und nicht gesichert. \nSie k�nnen die selektierte Bitmap �ndern \noder eine neue Bitmap hinzuf�gen. : Die Bitmap wurde ge�ndert und nicht gesichert. \nSie k�nnen die selektierte Bitmap �ndern \noder eine neue Bitmap hinzuf�gen. */
+	Text [ de ] = "Die Bitmap wurde geändert und nicht gesichert. \nSie können die selektierte Bitmap ändern \noder eine neue Bitmap hinzufügen." ;
+	Text [ en-US ] = "The bitmap was modified without saving. \nYou can change the selected bitmap \\or add a new one." ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "As modificações feitas no bitmap não foram guardadas. Poderá alterar o \nbitmap seleccionado ou adicionar um novo bitmap.";
+	Text[ ru ] = "Растр был изменен, но не сохранен. \nВы можете изменить выбранный растр \nили добавить новый.";
+	Text[ el ] = "Το bitmap τροποποιήθηκε χωρίς να αποθηκευτεί. \nΜπορείτε να αλλάξετε το επιλεγμένο bitmap \\ή να προσθέσετε ένα νέο.";
+	Text[ nl ] = "De bitmap is zonder opslaan gewijzigd. U kunt de geselecteerde bitmap wijzigen \nof een nieuwe bitmap toevoegen.";
+	Text[ fr ] = "Les dernières modifications apportées au bitmap n'ont pas\nété sauvegardées. Vous pouvez modifier le bitmap\nsélectionné ou en ajouter un nouveau.";
+	Text[ es ] = "El bitmap ha sido modificado sin guardar.\nPuede modificar el bitmap seleccionado\no añadir uno nuevo.";
+	Text[ fi ] = "Bittikarttaa ei tallennettu muokkauksen jälkeen. \nVoit vaihtaa valitun bittikartan tai lisätä uuden.";
+	Text[ ca ] = "El mapa de bits s'ha modificat sense desar-lo. \nPodeu canviar el mapa de bits seleccionat \no afegir-ne un de nou.";
+	Text[ it ] = "La bitmap è stata modificata senza esseere salvata.\nPotete modificare la bitmap selezionata o aggiungerne una nuova.";
+	Text[ da ] = "Denne bitmap er blevet ændret, men ikke gemt. \nDu kan ændre den markerede bitmap\n eller tilføje en ny.";
+	Text[ sv ] = "Bitmappen ändrades utan att sparas.\nDu kan ändra den valda bitmappen eller\nlägga till en ny bitmapp.";
+	Text[ pl ] = "Mapa bitowa została zmieniona, lecz nie zapisana. \nMożesz zmienić zaznaczoną mapę bitową \nlub dodać nową.";
+	Text[ pt-BR ] = "O bitmap foi modificado sem ter sido salvo.\nV. poderá modificar o bitmap selecionado\n ou adicionar um novo.";
+	Text[ th ] = "ดัดแปลงบิทแมปโดยไม่ได้บันทึก. \nคุณต้องการเปลี่ยนบิทแมปที่เลือก \\หรือเพิ่มบิทแมปใหม่หรือไม่";
+	Text[ ja ] = "ビットマップが変更されて保存されていません。\n選択したビットマップを変更するか、\n新しいビットマップを追加することができます。";
+	Text[ ko ] = "비트맵이 변경되었으나 저장되지 않았습니다.\n선택된 비트맵을 변경하거나 \n 새 비트맵을 추가할 수 있습니다.";
+	Text[ zh-CN ] = "位图已经更改，但并没有被保存。\n您能够更改选中的位图\n或者新增一个新位图。";
+	Text[ zh-TW ] = "點陣圖已經變更，但並沒有被保存。\n您能夠更改選中的點陣圖\n或者新增一個新點陣圖。";
+	Text[ tr ] = "Bit eşlem değiştirildi, ancak kaydedilmedi.\nSeçilen bit eşlemi değiştirebilir \nya da yeni bir bit eşlem ekleyebilirsiniz.";
+	Text[ hi-IN ] = "संचित किये बिना बिटमॉप् को सुधार किया है । \nआप चुने हुए बिटमॉप् को बदल सकते है अथवा एक नया बिटमॉप् को जोड़ सकते है ।";
+	Text[ ar ] = "لم يتم حفظ الصورة النقطية بعد تغييرها.\nيمكنك تغيير الصورة النقطية المحددة، \nأو إضافة صورة نقطية جديدة.";
+	Text[ he ] = "Die Bitmap wurde geändert und nicht gesichert. \nSie können die selektierte Bitmap ändern \noder eine neue Bitmap hinzufügen.";
+};
+String STR_LINESTYLE
+{
+	Text [ de ] = "Linienstil" ;
+	Text [ en-US ] = "Line style" ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "Estilo da linha";
+	Text[ ru ] = "Стиль линии";
+	Text[ el ] = "Στυλ γραμμής";
+	Text[ nl ] = "Lijntype";
+	Text[ fr ] = "Style de ligne";
+	Text[ es ] = "Estilo de línea";
+	Text[ fi ] = "Viivatyyli";
+	Text[ ca ] = "Estil de línia";
+	Text[ it ] = "Stile linea";
+	Text[ da ] = "Stregtype";
+	Text[ sv ] = "Linjestil";
+	Text[ pl ] = "Styl linii";
+	Text[ pt-BR ] = "Estilo da linha";
+	Text[ th ] = "ลักษณะเส้น";
+	Text[ ja ] = "線スタイル";
+	Text[ ko ] = "선 스타일";
+	Text[ zh-CN ] = "线条式样";
+	Text[ zh-TW ] = "線條式樣";
+	Text[ tr ] = "Çizgi biçimi";
+	Text[ hi-IN ] = "रेखा शैली";
+	Text[ ar ] = "نمط الخط";
+	Text[ he ] = "‮סגנון קו‬";
+};
+String STR_ASK_CHANGE_LINESTYLE
+{
+	/* ### ACHTUNG: Neuer Text in Resource? Der Linienstil wurde ge�ndert und nicht gesichert. \nSie k�nnen den selektierten Linienstil �ndern \noder einen neuen Linienstil hinzuf�gen. : Der Linienstil wurde ge�ndert und nicht gesichert. \nSie k�nnen den selektierten Linienstil �ndern \noder einen neuen Linienstil hinzuf�gen. */
+	Text [ de ] = "Der Linienstil wurde geändert und nicht gesichert. \nSie können den selektierten Linienstil ändern \noder einen neuen Linienstil hinzufügen." ;
+	Text [ en-US ] = "The line style was modified without saving. \nYou can change the selected line style \nor add a new one." ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "O estilo de linha foi modificado sem ter sido guardado. Poderá modificar \no estilo de linha seleccionado ou\nadicionar um novo.";
+	Text[ ru ] = "Стиль линии был изменен, но не сохранен. \nВы можете изменить выбранный стиль линии \nили добавить новый стиль.";
+	Text[ el ] = "Το στυλ γραμμής τροποποιήθηκε χωρίς να αποθηκευτεί. \nΜπορείτε να αλλάξετε το επιλεγμένο στυλ \\ή να προσθέσετε ένα νέο.";
+	Text[ nl ] = "De wijzigingen in het lijntype zijn niet opgeslagen. \nU kunt het geselecteerde lijntype wijzigen \nof een nieuw lijntype toevoegen.";
+	Text[ fr ] = "Les dernières modifications apportées au style de ligne n'ont pas été sauvegardées. \nVous pouvez modifier le style de ligne sélectionné ou en ajouter un nouveau.";
+	Text[ es ] = "El estilo de línea ha sido modificado sin guardar.\nUsted puede modificar el estilo de línea seleccionado\no añadir uno nuevo.";
+	Text[ fi ] = "Viivatyyliä ei tallennettu muokkauksen jälkeen. \nVoit vaihtaa valitun viivatyylin\ntai lisätä uuden.";
+	Text[ ca ] = "L'estil de línia s'ha modificat sense desar-lo. \nPodeu canviar l'estil de línia seleccionat \no afegir-ne un de nou.";
+	Text[ it ] = "Lo stile riga è stato modificato senza essere salvato.\nPotete modificare lo stile riga selezionato o aggiungerne uno nuovo.";
+	Text[ da ] = "Stregtypen er blevet ændret, men ikke gemt. \nDu kan ændre den markerede stregtype \neller tilføje en ny.";
+	Text[ sv ] = "Linjestilen ändrades utan att sparas.\n Du kan ändra den markerade linjestilen eller\nlägga till en ny linjestil.";
+	Text[ pl ] = "Styl linii został zmieniony, lecz nie zapisany. \nMożesz zmienić zaznaczony styl linii \nlub dodać nowy.";
+	Text[ pt-BR ] = "O estilo de linha foi modificado sem ter sido salvo.\nV. poderá modificar o estilo de linha selecionado\nou adicionar um novo.";
+	Text[ th ] = "ดัดแปลงลักษณะเส้นโดยไม่ได้บันทึก. \nคุณต้องการเปลี่ยนลักษณะเส้นที่เลือก \nหรือเพิ่มลักษณะเส้นใหม่หรือไม่";
+	Text[ ja ] = "線スタイルが変更され保存されていません。\n選択した線スタイルを変更するか、\n新しい線スタイルを追加することができます。";
+	Text[ ko ] = "선 스타일이 변경되었으나 저장되지 않았습니다. \n선택된 선 스타일을 변경하거나 \n새 선 스타일을 추가할 수 있습니다.";
+	Text[ zh-CN ] = "线条式样已经更改，但是尚未保存。 \n您能够更改选中的线条式样\n或者新增一个线条式样。";
+	Text[ zh-TW ] = "線條式樣已經變更，但是尚未儲存。 \n您能夠變更選取的線條式樣\n或者新增一個線條式樣。";
+	Text[ tr ] = "Çizgi biçimi değiştirildi, ancak kaydedilmedi. \nSeçilen çizgi biçimini değiştirebilir \nya da yeni bir çizgi biçimi ekleyebilirsiniz.";
+	Text[ hi-IN ] = "संचित किये बिना रेखा शैली को सुधार किया है ।\nचुने हुए रेखा शैली को सुधारो अथवा एक नया रेखा शैली को जोड़ो ।";
+	Text[ ar ] = "لم يتم حفظ نمط الخط بعد تغييره. \nيمكنك تغيير نمط الخط المحدد، \nأو إضافة نمط خط جديد.";
+	Text[ he ] = "Der Linienstil wurde geändert und nicht gesichert. \nSie können den selektierten Linienstil ändern \noder einen neuen Linienstil hinzufügen.";
+};
+String STR_COLOR
+{
+	Text [ de ] = "Farbe" ;
+	Text [ en-US ] = "Color" ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "Cor";
+	Text[ ru ] = "Цвет";
+	Text[ el ] = "Χρώμα";
+	Text[ nl ] = "Kleur";
+	Text[ fr ] = "Couleur";
+	Text[ es ] = "Color";
+	Text[ fi ] = "Väri";
+	Text[ ca ] = "Color";
+	Text[ it ] = "Colore";
+	Text[ da ] = "Farve";
+	Text[ sv ] = "Färg";
+	Text[ pl ] = "Kolor";
+	Text[ pt-BR ] = "Cor";
+	Text[ th ] = "สี";
+	Text[ ja ] = "色";
+	Text[ ko ] = "색상";
+	Text[ zh-CN ] = "颜色";
+	Text[ zh-TW ] = "顏色";
+	Text[ tr ] = "Renk";
+	Text[ hi-IN ] = "रंग";
+	Text[ ar ] = "لون";
+	Text[ he ] = "‮צבע‬";
+};
+String STR_HATCH
+{
+	Text [ de ] = "Schraffur" ;
+	Text [ en-US ] = "Hatching" ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "Tracejado";
+	Text[ ru ] = "Штриховка";
+	Text[ el ] = "Γραμμοσκιά";
+	Text[ nl ] = "Arcering";
+	Text[ fr ] = "Hachure";
+	Text[ es ] = "Trama";
+	Text[ fi ] = "Viivoitus";
+	Text[ ca ] = "Ombreig";
+	Text[ it ] = "Tratteggio";
+	Text[ da ] = "Skravering";
+	Text[ sv ] = "Skraffering";
+	Text[ pl ] = "Kreskowanie";
+	Text[ pt-BR ] = "Hachurado";
+	Text[ th ] = "ซ่อนแฝง";
+	Text[ ja ] = "ハッチング";
+	Text[ ko ] = "해칭";
+	Text[ zh-CN ] = "阴影线";
+	Text[ zh-TW ] = "陰影線";
+	Text[ tr ] = "Tarama";
+	Text[ hi-IN ] = "हाचिंग";
+	Text[ ar ] = "نقش";
+	Text[ he ] = "Schraffur";
+};
+String STR_CHANGE
+{
+	/* ### ACHTUNG: Neuer Text in Resource? �ndern : �ndern */
+	Text [ de ] = "Ändern" ;
+	Text [ en-US ] = "Modify" ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "Alterar";
+	Text[ ru ] = "Изменить";
+	Text[ el ] = "Τροποποίηση";
+	Text[ nl ] = "Wijzigen";
+	Text[ fr ] = "Modifier";
+	Text[ es ] = "Modificar";
+	Text[ fi ] = "Muuta";
+	Text[ ca ] = "Modifica";
+	Text[ it ] = "Modifica";
+	Text[ da ] = "Modificer";
+	Text[ sv ] = "Ändra";
+	Text[ pl ] = "Modyfikuj";
+	Text[ pt-BR ] = "Modificar";
+	Text[ th ] = "ดัดแปลง";
+	Text[ ja ] = "変更";
+	Text[ ko ] = "수정";
+	Text[ zh-CN ] = "更改";
+	Text[ zh-TW ] = "變更";
+	Text[ tr ] = "Değiştir";
+	Text[ hi-IN ] = "सुधारो";
+	Text[ ar ] = "تعديل";
+	Text[ he ] = "‮שינוי‬";
+};
+String STR_ADD
+{
+	/* ### ACHTUNG: Neuer Text in Resource? Hinzuf�gen : Hinzuf�gen */
+	Text [ de ] = "Hinzufügen" ;
+	Text [ en-US ] = "Add" ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "Adicionar";
+	Text[ ru ] = "Добавить";
+	Text[ el ] = "Προσθήκη";
+	Text[ nl ] = "Toevoegen";
+	Text[ fr ] = "Ajouter";
+	Text[ es ] = "Añadir";
+	Text[ fi ] = "Lisää";
+	Text[ ca ] = "Afegeix";
+	Text[ it ] = "Aggiungi";
+	Text[ da ] = "Tilføj";
+	Text[ sv ] = "Lägg till";
+	Text[ pl ] = "Dodaj";
+	Text[ pt-BR ] = "Adicionar";
+	Text[ th ] = "เพิ่ม";
+	Text[ ja ] = "追加";
+	Text[ ko ] = "추가";
+	Text[ zh-CN ] = "新增";
+	Text[ zh-TW ] = "新增";
+	Text[ tr ] = "Ekle";
+	Text[ hi-IN ] = "जोड़ो";
+	Text[ ar ] = "إضافة";
+	Text[ he ] = "‮הוספה‬";
+};
+
+String STR_SAR_TITLE
+{
+    Text [ de ] = "Suchen & Ersetzen" ;
+	Text [ en-US ] = "Find & Replace";
+	Text[ pt ] = "Localizar & Substituir";
+	Text[ ru ] = "Найти и заменить";
+	Text[ el ] = "Αναζήτηση και Αντικατάσταση";
+	Text[ nl ] = "Zoeken&vervangen";
+	Text[ fr ] = "Rechercher & remplacer";
+	Text[ es ] = "Buscar y reemplazar";
+	Text[ fi ] = "Etsi ja korvaa";
+	Text[ ca ] = "Cerca i reemplaça";
+	Text[ it ] = "Cerca e sostituisci";
+	Text[ da ] = "Søg og erstat";
+	Text[ sv ] = "Sök och ersätt";
+	Text[ pl ] = "Znajdź i zamień";
+	Text[ pt-BR ] = "Localizar & Substituir";
+	Text[ th ] = "หาและแทนที่";
+	Text[ ja ] = "検索と置換";
+	Text[ ko ] = "찾기 및 바꾸기";
+	Text[ zh-CN ] = "搜寻和替换";
+	Text[ zh-TW ] = "搜尋和替代";
+	Text[ tr ] = "Bul ve Değiştir";
+	Text[ hi-IN ] = "अन्वेषण और प्रतिस्थापन";
+	Text[ ar ] = "بحث واستبدال";
+	Text[ he ] = "‮חיפוש והחלפה‬";
+};
+
+String STR_SAR_NOT_FOUND
+{
+    Text [ de ] = "Suchbegriff nicht gefunden." ;
+	Text [ en-US ] = "Search key not found.";
+	Text[ pt ] = "Impossível encontrar expressão procurada.";
+	Text[ ru ] = "Слово не найдено.";
+	Text[ el ] = "Δεν βρέθηκαν τα δεδομένα που αναζητάτε.";
+	Text[ nl ] = "Zoekbegrip niet gevonden.";
+	Text[ fr ] = "Terme recherché introuvable !";
+	Text[ es ] = "No se encontró la expresión buscada.";
+	Text[ fi ] = "Hakuavainta ei löytynyt.";
+	Text[ ca ] = "No s'ha trobat la clau de cerca.";
+	Text[ it ] = "Termine non trovato";
+	Text[ da ] = "Søgningen gav intet resultat.";
+	Text[ sv ] = "Sökord hittades inte.";
+	Text[ pl ] = "Szukane hasło nie zostało znalezione.";
+	Text[ pt-BR ] = "Expressão não encontrada.";
+	Text[ th ] = "ค้นหาคีย์ไม่พบ";
+	Text[ ja ] = "検索キーは見つかりません。";
+	Text[ ko ] = "검색 키를 찾지 못했습니다.";
+	Text[ zh-CN ] = "没有找到所要搜寻的内容。";
+	Text[ zh-TW ] = "沒有找到搜尋的内容。";
+	Text[ tr ] = "Aranan anahtar bulunamadı.";
+	Text[ hi-IN ] = "खोज किया हुआ चाभी नहीं प्राप्त हुआ ।";
+	Text[ ar ] = "تعذر العثور على البيانات التي تبحث عنها.";
+	Text[ he ] = "Suchbegriff nicht gefunden.";
+};
+
+String STR_SAR_WRAP_FORWARD
+{
+    Text [ de ] = "%PRODUCTNAME Impress hat bis zum Ende der Präsentation gesucht. Möchten Sie die Suche am Anfang fortsetzen?" ;
+	Text [ en-US ] = "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?";
+	Text[ pt ] = "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?";
+	Text[ ru ] = "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?";
+	Text[ el ] = "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?";
+	Text[ nl ] = "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?";
+	Text[ fr ] = "%PRODUCTNAME Impress a atteint la fin de la présentation. Souhaitez-vous reprendre la recherche au début de la présentation ?";
+	Text[ es ] = "%PRODUCTNAME Impress ha llegado hasta el final de la presentación. ¿Desea continuar la búsqueda desde el principio? ";
+	Text[ fi ] = "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?";
+	Text[ ca ] = "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?";
+	Text[ it ] = "%PRODUCTNAME Impress ha eseguito la ricerca fino al termine della presentazione. Volete continuare la ricerca dall'inizio?";
+	Text[ da ] = "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?";
+	Text[ sv ] = "%PRODUCTNAME Impress har sökt till slutet av presentationen. Vill du fortsätta sökningen i början?";
+	Text[ pl ] = "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?";
+	Text[ pt-BR ] = "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?";
+	Text[ th ] = "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?";
+	Text[ ja ] = "%PRODUCTNAME Impress は、プレゼンテーションの終わりまで検索しました。プレゼンテーションの始めに戻って検索を続行しますか。";
+	Text[ ko ] = "%PRODUCTNAME Impress 는 프레젠테이션의 끝까지 검색했습니다. 시작에서 검색을 계속하시겠습니까?";
+	Text[ zh-CN ] = "%PRODUCTNAME Impress 已经搜寻至演示文稿的页尾。您要继续从文档的页首位置搜寻？";
+	Text[ zh-TW ] = "%PRODUCTNAME Impress 已經搜尋至簡報頁尾。要繼續從頁首位置搜尋？";
+	Text[ tr ] = "%PRODUCTNAME Impress sununun sonuna kadar aradı. Sununun başından aramaya devam etmek istiyor musunuz?";
+	Text[ hi-IN ] = "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?";
+	Text[ ar ] = "%PRODUCTNAME Impress has searched to the end of the presentation. Do you want to continue at the beginning?";
+	Text[ he ] = "%PRODUCTNAME Impress hat bis zum Ende der Präsentation gesucht. Möchten Sie die Suche am Anfang fortsetzen?";
+};
+
+String STR_SAR_WRAP_BACKWARD
+{
+    Text [ de ] = "%PRODUCTNAME Impress hat bis zum Anfang der Präsentation gesucht. Möchten Sie die Suche am Ende fortsetzen?" ;
+	Text [ en-US ] = "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?";
+	Text[ pt ] = "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?";
+	Text[ ru ] = "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?";
+	Text[ el ] = "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?";
+	Text[ nl ] = "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?";
+	Text[ fr ] = "%PRODUCTNAME Impress a atteint le début de la présentation. Souhaitez-vous reprendre la recherche à la fin de la présentation ?";
+	Text[ es ] = "%PRODUCTNAME Impress ha llegado hasta el principio de la presentación. ¿Desea continuar la búsqueda desde el final? ";
+	Text[ fi ] = "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?";
+	Text[ ca ] = "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?";
+	Text[ it ] = "%PRODUCTNAME Impress eseguito la ricerca fino all'inizio della presentazione. Volete proseguire fino alla fine?";
+	Text[ da ] = "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?";
+	Text[ sv ] = "%PRODUCTNAME Impress har sökt till början av presentationen. Vill du fortsätta sökningen i slutet?";
+	Text[ pl ] = "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?";
+	Text[ pt-BR ] = "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?";
+	Text[ th ] = "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?";
+	Text[ ja ] = "%PRODUCTNAME Impress は、プレゼンテーションの始めまで検索しました。プレゼンテーションの終わりに戻って検索を続行しますか。";
+	Text[ ko ] = "%PRODUCTNAME Impress 는 프레젠테이션의 시작까지 검색했습니다. 끝에서 검색을 계속하시겠습니까?";
+	Text[ zh-CN ] = "%PRODUCTNAME Impress 已经搜寻到演示文稿的开头位置。您要继续搜寻至文档的结尾位置？";
+	Text[ zh-TW ] = "%PRODUCTNAME Impress 已經搜尋至簡報頁首位置。要繼續從頁尾位置搜尋？";
+	Text[ tr ] = "%PRODUCTNAME Impress sunumun baº?na kadar arama yapt?. Bitiminden itibaren devam etmek istiyor musunuz?";
+	Text[ hi-IN ] = "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?";
+	Text[ ar ] = "%PRODUCTNAME Impress has searched to the beginning of the presentation. Do you want to continue at the end?";
+	Text[ he ] = "%PRODUCTNAME Impress hat bis zum Anfang der Präsentation gesucht. Möchten Sie die Suche am Ende fortsetzen?";
+};
+
+String STR_SAR_WRAP_FORWARD_DRAW
+{
+    Text [ de ] = "%PRODUCTNAME Draw hat bis zum Ende des Dokuments gesucht. Möchten Sie die Suche am Anfang fortsetzen?" ;
+	Text [ en-US ] = "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?";
+	Text[ pt ] = "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?";
+	Text[ ru ] = "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?";
+	Text[ el ] = "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?";
+	Text[ nl ] = "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?";
+	Text[ fr ] = "%PRODUCTNAME Draw a atteint la fin du document. Souhaitez-vous reprendre la recherche au début du document ?";
+	Text[ es ] = "%PRODUCTNAME Draw ha llegado hasta el final del documento. ¿Desea continuar la búsqueda desde el principio? ";
+	Text[ fi ] = "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?";
+	Text[ ca ] = "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?";
+	Text[ it ] = "%PRODUCTNAME Draw ha eseguito la ricerca fino al termine della presentazione. Volete continuare la ricerca dall'inizio?";
+	Text[ da ] = "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?";
+	Text[ sv ] = "%PRODUCTNAME Draw har sökt till slutet av dokumentet. Vill du fortsätta sökningen i början?";
+	Text[ pl ] = "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?";
+	Text[ pt-BR ] = "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?";
+	Text[ th ] = "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?";
+	Text[ ja ] = "%PRODUCTNAME Draw は、ドキュメントの終わりまで検索しました。ドキュメントの始めに戻って検索を続行しますか。";
+	Text[ ko ] = "%PRODUCTNAME Draw 문서의 끝까지 검색했습니다. 시작에서 검색을 계속하시겠습니까?";
+	Text[ zh-CN ] = "%PRODUCTNAME Draw 已经搜寻至文档的页尾。您要继续从文档的页首位置搜寻？";
+	Text[ zh-TW ] = "%PRODUCTNAME Draw 已經搜尋至文件頁尾。要繼續從頁首位置搜尋？";
+	Text[ tr ] = "%PRODUCTNAME Draw dökümanın sonuna geldi. Baştan devam etmek ister misiniz?";
+	Text[ hi-IN ] = "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?";
+	Text[ ar ] = "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?";
+	Text[ he ] = "%PRODUCTNAME Draw has searched to the end of the document. Do you want to continue at the beginning?";
+};
+
+String STR_SAR_WRAP_BACKWARD_DRAW
+{
+    Text [ de ] = "%PRODUCTNAME Draw hat bis zum Anfang des Dokuments gesucht. Möchten Sie die Suche am Ende fortsetzen?" ;
+	Text [ en-US ] = "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?";
+	Text[ pt ] = "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?";
+	Text[ ru ] = "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?";
+	Text[ el ] = "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?";
+	Text[ nl ] = "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?";
+	Text[ fr ] = "%PRODUCTNAME Draw a atteint le début du document. Souhaitez-vous reprendre la recherche à la fin du document ?";
+	Text[ es ] = "%PRODUCTNAME Draw ha llegado hasta el principio del documento. ¿Desea continuar desde el final? ";
+	Text[ fi ] = "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?";
+	Text[ ca ] = "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?";
+	Text[ it ] = "%PRODUCTNAME Draw ha eseguito la ricerca fino all'inizio della presentazione. Volete proseguire fino alla fine?";
+	Text[ da ] = "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?";
+	Text[ sv ] = "%PRODUCTNAME Draw har sökt till början av dokumentet. Vill du fortsätta sökningen i slutet?";
+	Text[ pl ] = "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?";
+	Text[ pt-BR ] = "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?";
+	Text[ th ] = "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?";
+	Text[ ja ] = "%PRODUCTNAME Draw は、ドキュメントの始めまで検索しました。ドキュメントの終わりに戻って検索を続行しますか。";
+	Text[ ko ] = "%PRODUCTNAME Draw 는 문서의 시작까지 검색했습니다. 끝에서 검색을 계속하시겠습니까?";
+	Text[ zh-CN ] = "%PRODUCTNAME Draw 已经搜寻至文档的开头位置。您要继续搜寻至文档的结尾位置？";
+	Text[ zh-TW ] = "%PRODUCTNAME Draw 已經搜尋至文件頁首位置。要繼續從頁尾位置搜尋？";
+	Text[ tr ] = "%PRODUCTNAME Draw dökümanın başlangıcına geldi. Sondan devam etmek ister misiniz?";
+	Text[ hi-IN ] = "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?";
+	Text[ ar ] = "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?";
+	Text[ he ] = "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?";
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+

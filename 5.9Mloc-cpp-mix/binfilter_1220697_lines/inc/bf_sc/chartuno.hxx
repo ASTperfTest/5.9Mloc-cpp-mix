@@ -1,0 +1,199 @@
+/*************************************************************************
+ *
+ *  OpenOffice.org - a multi-platform office productivity suite
+ *
+ *  $RCSfile: chartuno.hxx,v $
+ *
+ *  $Revision: 1.3 $
+ *
+ *  last change: $Author: rt $ $Date: 2005/09/09 11:01:20 $
+ *
+ *  The Contents of this file are made available subject to
+ *  the terms of GNU Lesser General Public License Version 2.1.
+ *
+ *
+ *    GNU Lesser General Public License Version 2.1
+ *    =============================================
+ *    Copyright 2005 by Sun Microsystems, Inc.
+ *    901 San Antonio Road, Palo Alto, CA 94303, USA
+ *
+ *    This library is free software; you can redistribute it and/or
+ *    modify it under the terms of the GNU Lesser General Public
+ *    License version 2.1, as published by the Free Software Foundation.
+ *
+ *    This library is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *    Lesser General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Lesser General Public
+ *    License along with this library; if not, write to the Free Software
+ *    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ *    MA  02111-1307  USA
+ *
+ ************************************************************************/
+
+#ifndef SC_CHARTUNO_HXX
+#define SC_CHARTUNO_HXX
+
+#ifndef _SFXLSTNER_HXX //autogen
+#include <svtools/lstner.hxx>
+#endif
+#ifndef _STRING_HXX
+#include <tools/string.hxx>
+#endif
+ 
+#ifndef _COM_SUN_STAR_TABLE_XTABLECHART_HPP_
+#include <com/sun/star/table/XTableChart.hpp>
+#endif
+#ifndef _COM_SUN_STAR_TABLE_XTABLECHARTS_HPP_
+#include <com/sun/star/table/XTableCharts.hpp>
+#endif
+#ifndef _COM_SUN_STAR_DOCUMENT_XEMBEDDEDOBJECTSUPPLIER_HPP_
+#include <com/sun/star/document/XEmbeddedObjectSupplier.hpp>
+#endif
+#ifndef _COM_SUN_STAR_LANG_XSERVICEINFO_HPP_
+#include <com/sun/star/lang/XServiceInfo.hpp>
+#endif
+#ifndef _COM_SUN_STAR_CONTAINER_XENUMERATIONACCESS_HPP_
+#include <com/sun/star/container/XEnumerationAccess.hpp>
+#endif
+#ifndef _COM_SUN_STAR_CONTAINER_XINDEXACCESS_HPP_
+#include <com/sun/star/container/XIndexAccess.hpp>
+#endif
+#ifndef _COM_SUN_STAR_CONTAINER_XNAMED_HPP_
+#include <com/sun/star/container/XNamed.hpp>
+#endif
+
+#ifndef _CPPUHELPER_IMPLBASE4_HXX_
+#include <cppuhelper/implbase4.hxx>
+#endif
+namespace binfilter {
+
+
+class ScDocShell;
+class ScRangeListRef;
+class ScChartObj;
+
+
+class ScChartsObj : public cppu::WeakImplHelper4<
+							::com::sun::star::table::XTableCharts,
+							::com::sun::star::container::XEnumerationAccess,
+							::com::sun::star::container::XIndexAccess,
+							::com::sun::star::lang::XServiceInfo >,
+						public SfxListener
+{
+private:
+	ScDocShell*				pDocShell;
+	USHORT					nTab;			// Charts sind pro Sheet
+
+	ScChartObj*				GetObjectByIndex_Impl(long nIndex) const;
+	ScChartObj*				GetObjectByName_Impl(const ::rtl::OUString& aName) const;
+
+public:
+							ScChartsObj(ScDocShell* pDocSh, USHORT nT);
+	virtual					~ScChartsObj();
+
+	virtual void			Notify( SfxBroadcaster& rBC, const SfxHint& rHint );
+
+							// XTableCharts
+	virtual void SAL_CALL	addNewByName( const ::rtl::OUString& aName,
+									const ::com::sun::star::awt::Rectangle& aRect,
+									const ::com::sun::star::uno::Sequence<
+										::com::sun::star::table::CellRangeAddress >& aRanges,
+									sal_Bool bColumnHeaders, sal_Bool bRowHeaders )
+										throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL	removeByName( const ::rtl::OUString& aName )
+										throw(::com::sun::star::uno::RuntimeException);
+
+							// XNameAccess
+	virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName )
+								throw(::com::sun::star::container::NoSuchElementException,
+									::com::sun::star::lang::WrappedTargetException,
+									::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames()
+								throw(::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName )
+								throw(::com::sun::star::uno::RuntimeException);
+
+							// XIndexAccess
+	virtual sal_Int32 SAL_CALL getCount() throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( sal_Int32 Index )
+								throw(::com::sun::star::lang::IndexOutOfBoundsException,
+									::com::sun::star::lang::WrappedTargetException,
+									::com::sun::star::uno::RuntimeException);
+
+							// XEnumerationAccess
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration > SAL_CALL
+							createEnumeration() throw(::com::sun::star::uno::RuntimeException);
+
+							// XElementAccess
+	virtual ::com::sun::star::uno::Type SAL_CALL getElementType()
+								throw(::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL hasElements() throw(::com::sun::star::uno::RuntimeException);
+
+							// XServiceInfo
+	virtual ::rtl::OUString SAL_CALL getImplementationName()
+								throw(::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
+								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
+								throw(::com::sun::star::uno::RuntimeException);
+};
+
+
+class ScChartObj : public cppu::WeakImplHelper4<
+							::com::sun::star::table::XTableChart,
+							::com::sun::star::document::XEmbeddedObjectSupplier,
+							::com::sun::star::container::XNamed,
+							::com::sun::star::lang::XServiceInfo >,
+						public SfxListener
+{
+private:
+	ScDocShell*				pDocShell;
+	USHORT					nTab;			// Charts sind pro Sheet
+	String					aChartName;
+
+	void	Update_Impl( const ScRangeListRef& rRanges, BOOL bColHeaders, BOOL bRowHeaders );
+	void	GetData_Impl( ScRangeListRef& rRanges, BOOL& rColHeaders, BOOL& rRowHeaders ) const;
+
+public:
+							ScChartObj(ScDocShell* pDocSh, USHORT nT, const String& rN);
+	virtual					~ScChartObj();
+
+	virtual void			Notify( SfxBroadcaster& rBC, const SfxHint& rHint );
+
+							// XTableChart
+	virtual sal_Bool SAL_CALL getHasColumnHeaders() throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL	setHasColumnHeaders( sal_Bool bHasColumnHeaders )
+								throw(::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL getHasRowHeaders() throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL	setHasRowHeaders( sal_Bool bHasRowHeaders )
+								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::com::sun::star::table::CellRangeAddress > SAL_CALL
+							getRanges(  ) throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL	setRanges( const ::com::sun::star::uno::Sequence<
+									::com::sun::star::table::CellRangeAddress >& aRanges )
+								throw(::com::sun::star::uno::RuntimeException);
+
+							// XEmbeddedObjectSupplier
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent > SAL_CALL
+							getEmbeddedObject() throw(::com::sun::star::uno::RuntimeException);
+
+							// XNamed
+	virtual ::rtl::OUString SAL_CALL getName() throw(::com::sun::star::uno::RuntimeException);
+	virtual void SAL_CALL	setName( const ::rtl::OUString& aName )
+								throw(::com::sun::star::uno::RuntimeException);
+
+							// XServiceInfo
+	virtual ::rtl::OUString SAL_CALL getImplementationName()
+								throw(::com::sun::star::uno::RuntimeException);
+	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
+								throw(::com::sun::star::uno::RuntimeException);
+	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
+								throw(::com::sun::star::uno::RuntimeException);
+};
+
+} //namespace binfilter
+#endif
+

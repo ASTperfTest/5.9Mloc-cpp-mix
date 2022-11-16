@@ -1,0 +1,109 @@
+/*************************************************************************
+ *
+ *  OpenOffice.org - a multi-platform office productivity suite
+ *
+ *  $RCSfile: sc_sc.src,v $
+ *
+ *  $Revision: 1.5 $
+ *
+ *  last change: $Author: rt $ $Date: 2006/10/27 16:54:07 $
+ *
+ *  The Contents of this file are made available subject to
+ *  the terms of GNU Lesser General Public License Version 2.1.
+ *
+ *
+ *    GNU Lesser General Public License Version 2.1
+ *    =============================================
+ *    Copyright 2005 by Sun Microsystems, Inc.
+ *    901 San Antonio Road, Palo Alto, CA 94303, USA
+ *
+ *    This library is free software; you can redistribute it and/or
+ *    modify it under the terms of the GNU Lesser General Public
+ *    License version 2.1, as published by the Free Software Foundation.
+ *
+ *    This library is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *    Lesser General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Lesser General Public
+ *    License along with this library; if not, write to the Free Software
+ *    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ *    MA  02111-1307  USA
+ *
+ ************************************************************************/
+#define NO_LOCALIZE_EXPORT
+ //==================================================================
+ // StarCalc Applikations Resource
+ //
+ // (C) 1994 StarDivision GmbH, Hamburg, Germany
+ // $Author: rt $ $Date: 2006/10/27 16:54:07 $ $Revision: 1.5 $
+ // $Logfile:   T:/sc/source/ui/src/sc.srv  $ $Workfile:   sc.src  $
+ //==================================================================
+
+
+#include "bf_sc.hrc" // -> #include <sfx.hrc>
+
+
+
+ // Version und App-Titel------------------------------------------------------
+
+String RID_BUILDVERSION
+{
+	Text = UPDVER ;
+};
+
+String RID_APPTITLE
+{
+	/* ### ACHTUNG: Neuer Text in Resource? StarCalc 4.0 : StarCalc 3.1 */
+	Text [ de ] = "%PRODUCTNAME Calc" ;
+	Text [ en-US ] = "%PRODUCTNAME Calc" ;
+	Text [ x-comment ] = " ";
+	Text[ pt ] = "%PRODUCTNAME Calc";
+	Text[ ru ] = "%PRODUCTNAME Calc";
+	Text[ el ] = "%PRODUCTNAME Calc";
+	Text[ nl ] = "%PRODUCTNAME Calc";
+	Text[ fr ] = "%PRODUCTNAME Calc";
+	Text[ es ] = "%PRODUCTNAME Calc";
+	Text[ fi ] = "%PRODUCTNAME Calc";
+	Text[ ca ] = "%PRODUCTNAME Calc";
+	Text[ it ] = "%PRODUCTNAME Calc";
+	Text[ da ] = "%PRODUCTNAME Calc";
+	Text[ sv ] = "%PRODUCTNAME Calc";
+	Text[ pl ] = "%PRODUCTNAME Calc";
+	Text[ pt-BR ] = "%PRODUCTNAME Calc";
+	Text[ th ] = "%PRODUCTNAME Calc";
+	Text[ ja ] = "%PRODUCTNAME Calc";
+	Text[ ko ] = "%PRODUCTNAME Calc";
+	Text[ zh-CN ] = "%PRODUCTNAME Calc";
+	Text[ zh-TW ] = "%PRODUCTNAME Calc";
+	Text[ tr ] = "%PRODUCTNAME Calc";
+	Text[ hi-IN ] = "%PRODUCTNAME गणना";
+	Text[ ar ] = "%PRODUCTNAME Calc";
+	Text[ he ] = "%PRODUCTNAME Calc";
+};
+
+ // About-Dialog --------------------------------------------------------------
+
+ // Icons & Bitmaps: ----------------------------------------------------------
+
+
+
+
+
+
+ // ???
+String 30001 { Text = "Dummy1" ; };
+String 30002 { Text = "Dummy2" ; };
+
+
+
+
+
+
+
+
+
+
+
+

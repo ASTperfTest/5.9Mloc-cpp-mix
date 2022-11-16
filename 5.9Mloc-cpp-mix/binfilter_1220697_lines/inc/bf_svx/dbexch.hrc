@@ -1,0 +1,64 @@
+/*************************************************************************
+ *
+ *  OpenOffice.org - a multi-platform office productivity suite
+ *
+ *  $RCSfile: dbexch.hrc,v $
+ *
+ *  $Revision: 1.2 $
+ *
+ *  last change: $Author: rt $ $Date: 2005/09/09 13:14:37 $
+ *
+ *  The Contents of this file are made available subject to
+ *  the terms of GNU Lesser General Public License Version 2.1.
+ *
+ *
+ *    GNU Lesser General Public License Version 2.1
+ *    =============================================
+ *    Copyright 2005 by Sun Microsystems, Inc.
+ *    901 San Antonio Road, Palo Alto, CA 94303, USA
+ *
+ *    This library is free software; you can redistribute it and/or
+ *    modify it under the terms of the GNU Lesser General Public
+ *    License version 2.1, as published by the Free Software Foundation.
+ *
+ *    This library is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *    Lesser General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Lesser General Public
+ *    License along with this library; if not, write to the Free Software
+ *    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ *    MA  02111-1307  USA
+ *
+ ************************************************************************/
+#ifndef _SVX_DBEXCH_HRC
+#define _SVX_DBEXCH_HRC
+
+// Format zum Uebertragen von Daten aus dem DatenbankBrowser
+// Format: "Datenbankname";"Tabellen/QueryName"; 1/0(fuer Tabelle/Abfrage);  SQL-Statement;Selektionsliste
+// Name der Tabelle kann leer sein
+// Feldtrenner ist "ASCII 11"	!!!!
+// Selektionsliste:""				// alle selektiert
+//				   | "1;2;...n"		// Selektierte Saetze, Start bei 1
+#define SBA_DATAEXCHANGE_FORMAT	"SBA-DATAFORMAT"
+
+// Feldtrenner ist "ASCII 11"	!!!!
+// Format zum Uebertragen von Feldname aus dem DatenbankBrowser
+// "Datenbankname";"Tabellen/QueryName";0(Tabelle) / 1(Abfrage) / 2(SQL) / 3(NATIVE_SQL);"Feldname"
+#define SBA_FIELDEXCHANGE_FORMAT "SBA-FIELDFORMAT"
+
+// Feldtrenner ist "ASCII 11"	!!!!
+// Format zum Uebertragen von Feldinhalten aus dem DatenbankBrowser
+// "Datenbankname";"Tabellen/QueryName";1/0(fuer Tabelle/Abfrage);"Feldname";"FeldInhalt"
+#define SBA_FIELDDATAEXCHANGE_FORMAT "SBA-FIELDDATAFORMAT"
+
+// Office-internes Format (entspricht der private-URL )
+// Wird vom Writer und Calc benutzt, wenn Explorer-Contents gedraggt werden
+#define SBA_PRIVATEURL_EXCHANGE_FORMAT "SBA-PRIVATEURLFORMAT"
+
+// SBA-internes Format fuer das erzeugen von Joins in der RelationsShell
+#define SBA_JOIN_EXCHANGE_FORMAT "SBA-JOINFORMAT"
+
+#endif  // _SVX_DBEXCH_HRC
+

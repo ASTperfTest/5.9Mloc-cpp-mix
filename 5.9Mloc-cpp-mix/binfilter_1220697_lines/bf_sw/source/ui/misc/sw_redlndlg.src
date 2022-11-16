@@ -1,0 +1,84 @@
+/*************************************************************************
+ *
+ *  OpenOffice.org - a multi-platform office productivity suite
+ *
+ *  $RCSfile: sw_redlndlg.src,v $
+ *
+ *  $Revision: 1.5 $
+ *
+ *  last change: $Author: rt $ $Date: 2006/10/28 01:13:39 $
+ *
+ *  The Contents of this file are made available subject to
+ *  the terms of GNU Lesser General Public License Version 2.1.
+ *
+ *
+ *    GNU Lesser General Public License Version 2.1
+ *    =============================================
+ *    Copyright 2005 by Sun Microsystems, Inc.
+ *    901 San Antonio Road, Palo Alto, CA 94303, USA
+ *
+ *    This library is free software; you can redistribute it and/or
+ *    modify it under the terms of the GNU Lesser General Public
+ *    License version 2.1, as published by the Free Software Foundation.
+ *
+ *    This library is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *    Lesser General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Lesser General Public
+ *    License along with this library; if not, write to the Free Software
+ *    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ *    MA  02111-1307  USA
+ *
+ ************************************************************************/
+#define NO_LOCALIZE_EXPORT
+/* StarView ressource file */
+
+#include "redlndlg.hrc"
+#include "misc.hrc"
+#include "helpid.h"
+
+#define WIDTH 297
+#define HEIGHT 169
+
+#define REDLNDLG \
+    OutputSize = TRUE ; \
+    SVLook = TRUE ; \
+    Size = MAP_APPFONT ( WIDTH , HEIGHT ) ; \
+    Moveable = TRUE ; \
+    Closeable = TRUE ; \
+    Sizeable = TRUE ; \
+    Hide = TRUE ; \
+    Control CTRL_TABPAGES\
+    {\
+        Pos = MAP_APPFONT ( XBORDER , YBORDER ) ; \
+        Size = MAP_APPFONT ( WIDTH - XBORDER * 2 , HEIGHT - YBORDER * 2 ) ; \
+        HelpID = HID_REDLINE_CTRL ; \
+        TabStop = TRUE ; \
+    };\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

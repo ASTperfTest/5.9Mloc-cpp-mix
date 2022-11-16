@@ -1,0 +1,103 @@
+/*************************************************************************
+ *
+ *  OpenOffice.org - a multi-platform office productivity suite
+ *
+ *  $RCSfile: sw_xmlscript.cxx,v $
+ *
+ *  $Revision: 1.6 $
+ *
+ *  last change: $Author: obo $ $Date: 2007/03/09 16:41:47 $
+ *
+ *  The Contents of this file are made available subject to
+ *  the terms of GNU Lesser General Public License Version 2.1.
+ *
+ *
+ *    GNU Lesser General Public License Version 2.1
+ *    =============================================
+ *    Copyright 2005 by Sun Microsystems, Inc.
+ *    901 San Antonio Road, Palo Alto, CA 94303, USA
+ *
+ *    This library is free software; you can redistribute it and/or
+ *    modify it under the terms of the GNU Lesser General Public
+ *    License version 2.1, as published by the Free Software Foundation.
+ *
+ *    This library is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *    Lesser General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Lesser General Public
+ *    License along with this library; if not, write to the Free Software
+ *    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ *    MA  02111-1307  USA
+ *
+ ************************************************************************/
+
+
+#include <hintids.hxx>
+
+#ifndef _COM_SUN_STAR_FRAME_XMODEL_HPP_
+#include <com/sun/star/frame/XModel.hpp>
+#endif
+#ifndef _COM_SUN_STAR_DOCUMENT_XDOCUMENTINFOSUPPLIER_HPP_
+#include <com/sun/star/document/XDocumentInfoSupplier.hpp>
+#endif
+
+#ifndef _XMLOFF_XMLNMSPE_HXX
+#include <bf_xmloff/xmlnmspe.hxx>
+#endif
+
+#ifndef _XMLOFF_XMLMETAI_HXX
+#include <bf_xmloff/xmlscripti.hxx>
+#endif
+
+#ifndef _SVX_LANGITEM_HXX
+#include <bf_svx/langitem.hxx>
+#endif
+
+#ifndef _SWDOCSH_HXX
+#include "docsh.hxx"
+#endif
+
+#ifndef _HORIORNT_HXX
+#include <horiornt.hxx>
+#endif
+
+#ifndef _DOC_HXX //autogen wg. SwDoc
+#include <doc.hxx>
+#endif
+
+#ifndef _XMLIMP_HXX
+#include "xmlimp.hxx"
+#endif
+#ifndef _XMLEXP_HXX
+#include "xmlexp.hxx"
+#endif
+namespace binfilter {
+
+using namespace ::rtl;
+using namespace ::com::sun::star;
+using namespace ::com::sun::star::uno;
+
+// ---------------------------------------------------------------------
+
+SvXMLImportContext *SwXMLImport::CreateScriptContext(
+									   const OUString& rLocalName )
+{
+	SvXMLImportContext *pContext = 0;
+
+	if( !(IsStylesOnlyMode() || IsInsertMode()) )
+	{
+		pContext = new XMLScriptContext( *this,
+									XML_NAMESPACE_OFFICE, rLocalName,
+									GetModel() );
+	}
+	
+	if( !pContext )
+		pContext = new SvXMLImportContext( *this, XML_NAMESPACE_OFFICE,
+									   	   rLocalName );
+
+	return pContext;
+}
+
+}

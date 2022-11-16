@@ -1,0 +1,82 @@
+/*************************************************************************
+ *
+ *  OpenOffice.org - a multi-platform office productivity suite
+ *
+ *  $RCSfile: globdoc.hrc,v $
+ *
+ *  $Revision: 1.2 $
+ *
+ *  last change: $Author: rt $ $Date: 2005/09/09 05:34:27 $
+ *
+ *  The Contents of this file are made available subject to
+ *  the terms of GNU Lesser General Public License Version 2.1.
+ *
+ *
+ *    GNU Lesser General Public License Version 2.1
+ *    =============================================
+ *    Copyright 2005 by Sun Microsystems, Inc.
+ *    901 San Antonio Road, Palo Alto, CA 94303, USA
+ *
+ *    This library is free software; you can redistribute it and/or
+ *    modify it under the terms of the GNU Lesser General Public
+ *    License version 2.1, as published by the Free Software Foundation.
+ *
+ *    This library is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *    Lesser General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Lesser General Public
+ *    License along with this library; if not, write to the Free Software
+ *    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ *    MA  02111-1307  USA
+ *
+ ************************************************************************/
+
+#ifndef _GLOBDOC_HRC
+#define _GLOBDOC_HRC
+
+#include "rcid.hrc"
+
+#define STR_HUMAN_SWGLOBDOC_NAME				(RC_GLOBDOC_BEGIN + 2)
+#define STR_WRITER_GLOBALDOC_FULLTYPE_40		(RC_GLOBDOC_BEGIN + 3)
+#define STR_WRITER_GLOBALDOC_FULLTYPE_50		(RC_GLOBDOC_BEGIN + 4)
+#define STR_WRITER_GLOBALDOC_FULLTYPE			(RC_GLOBDOC_BEGIN + 5)
+
+#define MN_GLOBALFILE                              (RC_GLOBDOC_BEGIN + 30)
+#define MN_GLOBALEDIT                              (RC_GLOBDOC_BEGIN + 31)
+#define MN_GLOBALVIEW                              (RC_GLOBDOC_BEGIN + 32)
+#define MN_GLOBALINS                               (RC_GLOBDOC_BEGIN + 33)
+#define MN_GLOBALFORMAT                            (RC_GLOBDOC_BEGIN + 34)
+#define MN_GLOBALEXTRA                             (RC_GLOBDOC_BEGIN + 35)
+#define MN_GLOBALWIN                               (RC_GLOBDOC_BEGIN + 36)
+
+#define MN_GLOBALFILE_PORT                         (RC_GLOBDOC_BEGIN + 47)
+#define MN_GLOBALEDIT_PORT                         (RC_GLOBDOC_BEGIN + 48)
+#define MN_GLOBALVIEW_PORT                         (RC_GLOBDOC_BEGIN + 49)
+#define MN_GLOBALINS_PORT                          (RC_GLOBDOC_BEGIN + 50)
+#define MN_GLOBALFORMAT_PORT                       (RC_GLOBDOC_BEGIN + 51)
+#define MN_GLOBALEXTRA_PORT                        (RC_GLOBDOC_BEGIN + 52)
+#define MN_GLOBALWIN_PORT                          (RC_GLOBDOC_BEGIN + 53)
+
+#define MN_OBJECTMENU_GLOBALTEXT               (RC_GLOBDOC_BEGIN + 54)
+#define MN_OBJECTMENU_GLOBALLIST               (RC_GLOBDOC_BEGIN + 55)
+#define MN_OBJECTMENU_GLOBALTABLE              (RC_GLOBDOC_BEGIN + 56)
+#define MN_OBJECTMENU_GLOBALFRAME              (RC_GLOBDOC_BEGIN + 57)
+#define MN_OBJECTMENU_GLOBALGRAFIK             (RC_GLOBDOC_BEGIN + 58)
+#define MN_OBJECTMENU_GLOBALDRAW               (RC_GLOBDOC_BEGIN + 59)
+#define MN_OBJECTMENU_GLOBALDRWTXT             (RC_GLOBDOC_BEGIN + 60)
+#define MN_OBJECTMENU_GLOBALOLE                (RC_GLOBDOC_BEGIN + 61)
+#define MN_OBJECTMENU_GLOBALDRAWCONTROL        (RC_GLOBDOC_BEGIN + 62)
+
+#define MN_GLOBAL_TEXT_POPUPMENU                  (RC_GLOBDOC_BEGIN + 63)
+// ------------------------------------------------------------------------
+
+#define GLOBDOC_ACT_END             MN_GLOBAL_TEXT_POPUPMENU
+
+
+#if GLOBDOC_ACT_END > RC_GLOBDOC_END
+#error Resource-Id Ueberlauf in #file, #line
+#endif
+
+#endif

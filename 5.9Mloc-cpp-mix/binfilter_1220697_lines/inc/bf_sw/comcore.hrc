@@ -1,0 +1,83 @@
+/*************************************************************************
+ *
+ *  OpenOffice.org - a multi-platform office productivity suite
+ *
+ *  $RCSfile: comcore.hrc,v $
+ *
+ *  $Revision: 1.4 $
+ *
+ *  last change: $Author: rt $ $Date: 2006/10/28 04:36:50 $
+ *
+ *  The Contents of this file are made available subject to
+ *  the terms of GNU Lesser General Public License Version 2.1.
+ *
+ *
+ *    GNU Lesser General Public License Version 2.1
+ *    =============================================
+ *    Copyright 2005 by Sun Microsystems, Inc.
+ *    901 San Antonio Road, Palo Alto, CA 94303, USA
+ *
+ *    This library is free software; you can redistribute it and/or
+ *    modify it under the terms of the GNU Lesser General Public
+ *    License version 2.1, as published by the Free Software Foundation.
+ *
+ *    This library is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *    Lesser General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Lesser General Public
+ *    License along with this library; if not, write to the Free Software
+ *    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ *    MA  02111-1307  USA
+ *
+ ************************************************************************/
+#ifndef _COMCORE_HRC
+#define _COMCORE_HRC
+
+#include "rcid.hrc"
+
+// ---------------
+// die Strings
+// ---------------
+
+#define STR_TABLE_DEFNAME					(RC_COMCORE_BEGIN + 2)
+#define STR_GRAPHIC_DEFNAME					(RC_COMCORE_BEGIN + 3)
+#define STR_OBJECT_DEFNAME					(RC_COMCORE_BEGIN + 4)
+#define STR_FRAME_DEFNAME					(RC_COMCORE_BEGIN + 5)
+#define STR_REGION_DEFNAME					(RC_COMCORE_BEGIN + 6)
+#define RID_GRAPHIC_REPLACEBMP				(RC_COMCORE_BEGIN + 8)
+#define RID_GRAPHIC_ERRORBMP				(RC_COMCORE_BEGIN + 9)
+#define STR_NUMRULE_DEFNAME					(RC_COMCORE_BEGIN + 10)
+#define MSG_DISABLE_READLINE_QUESTION		(RC_COMCORE_BEGIN + 18)
+
+// defines fuer die Autoformat Redline Kommentare
+#define STR_AUTOFMTREDL_DEL_EMPTY_PARA			0
+#define STR_AUTOFMTREDL_USE_REPLACE             1
+#define STR_AUTOFMTREDL_CPTL_STT_WORD           2
+#define STR_AUTOFMTREDL_CPTL_STT_SENT           3
+#define STR_AUTOFMTREDL_TYPO                    4
+#define STR_AUTOFMTREDL_USER_STYLE              5
+#define STR_AUTOFMTREDL_BULLET                  6
+#define STR_AUTOFMTREDL_UNDER              		7
+#define STR_AUTOFMTREDL_BOLD              		8
+#define STR_AUTOFMTREDL_FRACTION                9
+#define STR_AUTOFMTREDL_DETECT_URL              10
+#define STR_AUTOFMTREDL_DASH                    11
+#define STR_AUTOFMTREDL_ORDINAL                 12
+#define STR_AUTOFMTREDL_RIGHT_MARGIN            13
+#define STR_AUTOFMTREDL_SET_TMPL_TEXT			14
+#define STR_AUTOFMTREDL_SET_TMPL_INDENT			15
+#define STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT		16
+#define STR_AUTOFMTREDL_SET_TMPL_TEXT_INDENT	17
+#define STR_AUTOFMTREDL_SET_TMPL_HEADLINE		18
+#define STR_AUTOFMTREDL_SET_NUMBULET			19
+#define STR_AUTOFMTREDL_DEL_MORELINES			20
+// !!!!!!!!!!!!!!!!!!!!!!!!!!  das Ende immer richtig setzen !!!!!!!!!!!!
+#define STR_AUTOFMTREDL_END						21
+
+
+#endif
+
+
+

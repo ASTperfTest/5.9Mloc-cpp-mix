@@ -1,0 +1,118 @@
+/*************************************************************************
+ *
+ *  OpenOffice.org - a multi-platform office productivity suite
+ *
+ *  $RCSfile: svx_float3d.src,v $
+ *
+ *  $Revision: 1.5 $
+ *
+ *  last change: $Author: rt $ $Date: 2006/10/27 20:49:02 $
+ *
+ *  The Contents of this file are made available subject to
+ *  the terms of GNU Lesser General Public License Version 2.1.
+ *
+ *
+ *    GNU Lesser General Public License Version 2.1
+ *    =============================================
+ *    Copyright 2005 by Sun Microsystems, Inc.
+ *    901 San Antonio Road, Palo Alto, CA 94303, USA
+ *
+ *    This library is free software; you can redistribute it and/or
+ *    modify it under the terms of the GNU Lesser General Public
+ *    License version 2.1, as published by the Free Software Foundation.
+ *
+ *    This library is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *    Lesser General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Lesser General Public
+ *    License along with this library; if not, write to the Free Software
+ *    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ *    MA  02111-1307  USA
+ *
+ ************************************************************************/
+#define NO_LOCALIZE_EXPORT
+
+#include "dialogs.hrc"
+#include "float3d.hrc"
+#define WIDTH 						158
+//#define HEIGHT 						197
+#define HEIGHT 						209
+#define BORDER 						3
+#define BUTTON_WIDTH 			13
+#define BUTTON_HEIGHT 		13
+#define VT_BUTTON_WIDTH 	18
+#define GROUP_Y						(BORDER + BUTTON_HEIGHT + 3)
+#define GROUP_HEIGHT 			95
+#define GROUP_WIDTH				(WIDTH - 2 * BORDER)
+#define GROUP_PREV_X			60
+#define GROUP_PREV_Y			(GROUP_Y + GROUP_HEIGHT + 1)
+#define GROUP_PREV_WIDTH	(WIDTH - BORDER - GROUP_PREV_X)
+#define GROUP_PREV_HEIGHT	(HEIGHT - GROUP_PREV_Y - BORDER)
+#define BUTTON_SIZE 			MAP_APPFONT( BUTTON_WIDTH, BUTTON_WIDTH );
+
+#define MASKCOLOR	MaskColor = Color { Red=0xFFFF; Green=0x0000; Blue=0xFFFF; };
+
+
+
+
+
+
+
+/*Image RID_SVXIMAGE_LIGHT_ON_SELECTED {
+	  ImageBitmap = Bitmap { File = "lightons.bmp" ; };
+	  MASKCOLOR
+};
+Image RID_SVXIMAGE_LIGHT_OFF_SELECTED {
+	  ImageBitmap = Bitmap { File = "lightsel.bmp" ; };
+	  MASKCOLOR
+};*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

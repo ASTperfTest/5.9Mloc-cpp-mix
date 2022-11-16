@@ -1,0 +1,54 @@
+Making check in doc
+make[1]: Entering directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/doc'
+make[1]: Leaving directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/doc'
+Making check in lib
+make[1]: Entering directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/lib'
+make[1]: Niets te doen voor `check'.
+make[1]: Leaving directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/lib'
+Making check in intl
+make[1]: Entering directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/intl'
+make[1]: Niets te doen voor `check'.
+make[1]: Leaving directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/intl'
+Making check in m4
+make[1]: Entering directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/m4'
+make[1]: Niets te doen voor `check'.
+make[1]: Leaving directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/m4'
+Making check in src
+make[1]: Entering directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/src'
+make[1]: Niets te doen voor `check'.
+make[1]: Leaving directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/src'
+Making check in scripts
+make[1]: Entering directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/scripts'
+make[1]: Niets te doen voor `check'.
+make[1]: Leaving directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/scripts'
+Making check in po
+make[1]: Entering directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/po'
+make[1]: Leaving directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/po'
+Making check in tests
+make[1]: Entering directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/tests'
+make  genfile.exe
+make[2]: Entering directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/tests'
+make[2]: `genfile.exe' is up to date.
+make[2]: Leaving directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/tests'
+make  check-TESTS
+make[2]: Entering directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/tests'
+============================================
+Regression testing for GNU tar, version 1.13
+============================================
+PASS: version.sh
+FAIL: ignfail.sh
+PASS: extrac01.sh
+PASS: extrac02.sh
+FAIL: extrac03.sh
+FAIL: old.sh
+FAIL: volume.sh
+FAIL: gzip.sh
+FAIL: append.sh
+FAIL: delete01.sh
+====================
+7 of 10 tests failed
+====================
+make[2]: Leaving directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/tests'
+make[1]: Leaving directory `/cygdrive/k/gnu/tar/1.13/tar-1.13/tests'
+make[1]: Entering directory `/cygdrive/k/gnu/tar/1.13/tar-1.13'
+make[1]: Leaving directory `/cygdrive/k/gnu/tar/1.13/tar-1.13'

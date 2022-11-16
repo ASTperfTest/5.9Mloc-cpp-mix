@@ -1,0 +1,66 @@
+/*************************************************************************
+ *
+ *  OpenOffice.org - a multi-platform office productivity suite
+ *
+ *  $RCSfile: editeng.hrc,v $
+ *
+ *  $Revision: 1.4 $
+ *
+ *  last change: $Author: rt $ $Date: 2006/10/27 20:40:06 $
+ *
+ *  The Contents of this file are made available subject to
+ *  the terms of GNU Lesser General Public License Version 2.1.
+ *
+ *
+ *    GNU Lesser General Public License Version 2.1
+ *    =============================================
+ *    Copyright 2005 by Sun Microsystems, Inc.
+ *    901 San Antonio Road, Palo Alto, CA 94303, USA
+ *
+ *    This library is free software; you can redistribute it and/or
+ *    modify it under the terms of the GNU Lesser General Public
+ *    License version 2.1, as published by the Free Software Foundation.
+ *
+ *    This library is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *    Lesser General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Lesser General Public
+ *    License along with this library; if not, write to the Free Software
+ *    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ *    MA  02111-1307  USA
+ *
+ ************************************************************************/
+#ifndef _EDITENG_HRC
+#define _EDITENG_HRC
+
+#ifndef _SOLAR_HRC
+#include <svtools/solar.hrc>
+#endif
+
+#define RID_EDITUNDO_DEL			( RID_EDIT_START + 0 )
+#define RID_EDITUNDO_MOVE			( RID_EDIT_START + 1 )
+#define RID_EDITUNDO_INSERT			( RID_EDIT_START + 2 )
+#define RID_EDITUNDO_REPLACE 		( RID_EDIT_START + 3 )
+#define RID_EDITUNDO_SETATTRIBS		( RID_EDIT_START + 4 )
+#define RID_EDITUNDO_SETSTYLE		( RID_EDIT_START + 5 )
+#define RID_EDITUNDO_RESETATTRIBS	( RID_EDIT_START + 6 )
+#define RID_EDITUNDO_INDENT			( RID_EDIT_START + 7 )
+#define RID_EDITUNDO_TRANSLITERATE	( RID_EDIT_START + 8 )
+
+#define RID_MENU_SPELL				( RID_EDIT_START + 10 )
+
+#define MN_SPELLING         1
+#define MN_INSERT           2
+#define MN_IGNORE           3
+#define MN_AUTOCORR         4
+#define MN_WORDLANGUAGE     5
+#define MN_PARALANGUAGE     6
+
+#define MN_ALTSTART		1000
+#define MN_AUTOSTART	2000
+#define MN_DICTSTART	3000
+
+
+#endif	// _EDITENG_HRC

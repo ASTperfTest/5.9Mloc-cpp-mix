@@ -1,0 +1,156 @@
+/*************************************************************************
+ *
+ *  OpenOffice.org - a multi-platform office productivity suite
+ *
+ *  $RCSfile: sc_XMLCellRangeSourceContext.cxx,v $
+ *
+ *  $Revision: 1.7 $
+ *
+ *  last change: $Author: kz $ $Date: 2007/09/06 10:52:57 $
+ *
+ *  The Contents of this file are made available subject to
+ *  the terms of GNU Lesser General Public License Version 2.1.
+ *
+ *
+ *    GNU Lesser General Public License Version 2.1
+ *    =============================================
+ *    Copyright 2005 by Sun Microsystems, Inc.
+ *    901 San Antonio Road, Palo Alto, CA 94303, USA
+ *
+ *    This library is free software; you can redistribute it and/or
+ *    modify it under the terms of the GNU Lesser General Public
+ *    License version 2.1, as published by the Free Software Foundation.
+ *
+ *    This library is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *    Lesser General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Lesser General Public
+ *    License along with this library; if not, write to the Free Software
+ *    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ *    MA  02111-1307  USA
+ *
+ ************************************************************************/
+
+#ifdef PCH
+#endif
+
+#ifdef _MSC_VER
+#pragma hdrstop
+#endif
+
+//___________________________________________________________________
+
+#ifndef _SC_XMLCELLRANGESOURCECONTEXT_HXX
+#include "XMLCellRangeSourceContext.hxx"
+#endif
+
+#ifndef _XMLOFF_NMSPMAP_HXX
+#include <bf_xmloff/nmspmap.hxx>
+#endif
+#ifndef _XMLOFF_XMLUCONV_HXX
+#include <bf_xmloff/xmluconv.hxx>
+#endif
+
+#ifndef SC_XMLIMPRT_HXX
+#include "xmlimprt.hxx"
+#endif
+namespace binfilter {
+
+using namespace ::rtl;
+using namespace ::com::sun::star;
+
+
+//___________________________________________________________________
+
+ScMyImpCellRangeSource::ScMyImpCellRangeSource() :
+	nColumns( 0 ),
+	nRows( 0 ),
+	nRefresh( 0 )
+{
+}
+
+
+//___________________________________________________________________
+
+ScXMLCellRangeSourceContext::ScXMLCellRangeSourceContext(
+		ScXMLImport& rImport,
+		USHORT nPrfx,
+		const OUString& rLName,
+		const uno::Reference< xml::sax::XAttributeList >& xAttrList,
+		ScMyImpCellRangeSource* pCellRangeSource ) :
+	SvXMLImportContext( rImport, nPrfx, rLName )
+{
+	if( !xAttrList.is() ) return;
+
+	sal_Int16				nAttrCount		= xAttrList->getLength();
+	const SvXMLTokenMap&	rAttrTokenMap	= GetScImport().GetTableCellRangeSourceAttrTokenMap();
+
+	for( sal_Int16 nIndex = 0; nIndex < nAttrCount; nIndex++ )
+	{
+		OUString sAttrName	= xAttrList->getNameByIndex( nIndex );
+		OUString sValue		= xAttrList->getValueByIndex( nIndex );
+		OUString aLocalName;
+		USHORT nPrefix		= GetScImport().GetNamespaceMap().GetKeyByAttrName( sAttrName, &aLocalName );
+
+		switch( rAttrTokenMap.Get( nPrefix, aLocalName ) )
+		{
+			case XML_TOK_TABLE_CELL_RANGE_SOURCE_ATTR_NAME:
+				pCellRangeSource->sSourceStr = sValue;
+			break;
+			case XML_TOK_TABLE_CELL_RANGE_SOURCE_ATTR_FILTER_NAME:
+				pCellRangeSource->sFilterName = sValue;
+			break;
+			case XML_TOK_TABLE_CELL_RANGE_SOURCE_ATTR_FILTER_OPTIONS:
+				pCellRangeSource->sFilterOptions = sValue;
+			break;
+			case XML_TOK_TABLE_CELL_RANGE_SOURCE_ATTR_HREF:
+				pCellRangeSource->sURL = GetScImport().GetAbsoluteReference(sValue);
+			break;
+			case XML_TOK_TABLE_CELL_RANGE_SOURCE_ATTR_LAST_COLUMN:
+			{
+				sal_Int32 nValue;
+				if( SvXMLUnitConverter::convertNumber( nValue, sValue, 1 ) )
+					pCellRangeSource->nColumns = nValue;
+				else
+					pCellRangeSource->nColumns = 1;
+			}
+			break;
+			case XML_TOK_TABLE_CELL_RANGE_SOURCE_ATTR_LAST_ROW:
+			{
+				sal_Int32 nValue;
+				if( SvXMLUnitConverter::convertNumber( nValue, sValue, 1 ) )
+					pCellRangeSource->nRows = nValue;
+				else
+					pCellRangeSource->nRows = 1;
+			}
+			break;
+			case XML_TOK_TABLE_CELL_RANGE_SOURCE_ATTR_REFRESH_DELAY:
+			{
+				double fTime;
+				if( SvXMLUnitConverter::convertTime( fTime, sValue ) )
+					pCellRangeSource->nRefresh = Max( (sal_Int32)(fTime * 86400.0), (sal_Int32)0 );
+			}
+			break;
+		}
+	}
+}
+
+ScXMLCellRangeSourceContext::~ScXMLCellRangeSourceContext()
+{
+}
+
+SvXMLImportContext *ScXMLCellRangeSourceContext::CreateChildContext(
+		USHORT nPrefix,
+		const OUString& rLName,
+		const uno::Reference< xml::sax::XAttributeList>& xAttrList )
+{
+	return new SvXMLImportContext( GetImport(), nPrefix, rLName );
+}
+
+void ScXMLCellRangeSourceContext::EndElement()
+{
+}
+
+}

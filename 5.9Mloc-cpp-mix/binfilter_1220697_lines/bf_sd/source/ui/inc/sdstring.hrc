@@ -1,0 +1,69 @@
+/*************************************************************************
+ *
+ *  OpenOffice.org - a multi-platform office productivity suite
+ *
+ *  $RCSfile: sdstring.hrc,v $
+ *
+ *  $Revision: 1.4.148.1 $
+ *
+ *  last change: $Author: hr $ $Date: 2008/01/02 16:48:03 $
+ *
+ *  The Contents of this file are made available subject to
+ *  the terms of GNU Lesser General Public License Version 2.1.
+ *
+ *
+ *    GNU Lesser General Public License Version 2.1
+ *    =============================================
+ *    Copyright 2005 by Sun Microsystems, Inc.
+ *    901 San Antonio Road, Palo Alto, CA 94303, USA
+ *
+ *    This library is free software; you can redistribute it and/or
+ *    modify it under the terms of the GNU Lesser General Public
+ *    License version 2.1, as published by the Free Software Foundation.
+ *
+ *    This library is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *    Lesser General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Lesser General Public
+ *    License along with this library; if not, write to the Free Software
+ *    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ *    MA  02111-1307  USA
+ *
+ ************************************************************************/
+#include <bf_sfx2/sfx.hrc>
+#define SID_SD_STRING_START			RID_APP_START+300
+
+#undef STR_LINESTYLE
+#undef STR_COLOR
+#undef STR_HATCH
+#undef STR_CHANGE
+
+#define STR_GRADIENT				SID_SD_STRING_START+1
+#define STR_DESC_GRADIENT			SID_SD_STRING_START+2
+#define STR_DEL_GRADIENT			SID_SD_STRING_START+3
+#define STR_ASK_DEL_GRADIENT		SID_SD_STRING_START+4
+#define STR_ASK_CHANGE_GRADIENT		SID_SD_STRING_START+5
+#define STR_BITMAP					SID_SD_STRING_START+6
+#define STR_DESC_NEW_BITMAP			SID_SD_STRING_START+7
+#define STR_DESC_EXT_BITMAP			SID_SD_STRING_START+8
+#define STR_DEL_BITMAP				SID_SD_STRING_START+9
+#define STR_ASK_DEL_BITMAP			SID_SD_STRING_START+10
+#define STR_ASK_CHANGE_BITMAP		SID_SD_STRING_START+11
+
+#define STR_LINESTYLE				SID_SD_STRING_START+12
+#define STR_ASK_CHANGE_LINESTYLE	SID_SD_STRING_START+16
+
+#define STR_COLOR					SID_SD_STRING_START+18
+#define STR_HATCH					SID_SD_STRING_START+19
+#define STR_CHANGE					SID_SD_STRING_START+20
+#define STR_ADD						SID_SD_STRING_START+21
+
+// Texts for search and replace info and question boxes.
+#define STR_SAR_TITLE               SID_SD_STRING_START+22
+#define STR_SAR_NOT_FOUND           SID_SD_STRING_START+23
+#define STR_SAR_WRAP_FORWARD        SID_SD_STRING_START+24
+#define STR_SAR_WRAP_BACKWARD       SID_SD_STRING_START+25
+#define STR_SAR_WRAP_FORWARD_DRAW	SID_SD_STRING_START+26
+#define STR_SAR_WRAP_BACKWARD_DRAW  SID_SD_STRING_START+27

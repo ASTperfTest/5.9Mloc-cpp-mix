@@ -1,0 +1,1 @@
+nmake ..\winmsci.tcv\bin\svx%UPD%mw.dll product=full tcv=-20000

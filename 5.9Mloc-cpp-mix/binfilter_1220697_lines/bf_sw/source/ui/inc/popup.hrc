@@ -1,0 +1,58 @@
+/*************************************************************************
+ *
+ *  OpenOffice.org - a multi-platform office productivity suite
+ *
+ *  $RCSfile: popup.hrc,v $
+ *
+ *  $Revision: 1.2 $
+ *
+ *  last change: $Author: rt $ $Date: 2005/09/09 05:47:56 $
+ *
+ *  The Contents of this file are made available subject to
+ *  the terms of GNU Lesser General Public License Version 2.1.
+ *
+ *
+ *    GNU Lesser General Public License Version 2.1
+ *    =============================================
+ *    Copyright 2005 by Sun Microsystems, Inc.
+ *    901 San Antonio Road, Palo Alto, CA 94303, USA
+ *
+ *    This library is free software; you can redistribute it and/or
+ *    modify it under the terms of the GNU Lesser General Public
+ *    License version 2.1, as published by the Free Software Foundation.
+ *
+ *    This library is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *    Lesser General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Lesser General Public
+ *    License along with this library; if not, write to the Free Software
+ *    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ *    MA  02111-1307  USA
+ *
+ ************************************************************************/
+
+#ifndef _POPUP_HRC
+#define _POPUP_HRC
+
+#include "rcid.hrc"
+
+#define MN_TEXT_POPUPMENU			(RC_POPUPS_BEGIN + 0)
+#define MN_TAB_POPUPMENU			(RC_POPUPS_BEGIN + 1)
+#define MN_FRM_POPUPMENU			(RC_POPUPS_BEGIN + 2)
+#define MN_DRAW_POPUPMENU			(RC_POPUPS_BEGIN + 3)
+#define MN_DRWTXT_POPUPMENU			(RC_POPUPS_BEGIN + 4)
+#define MN_GRF_POPUPMENU			(RC_POPUPS_BEGIN + 5)
+#define MN_OLE_POPUPMENU			(RC_POPUPS_BEGIN + 6)
+#define MN_PPREVIEW_POPUPMENU   	(RC_POPUPS_BEGIN + 7)
+#define MN_SRCVIEW_POPUPMENU        (RC_POPUPS_BEGIN + 8)
+#define MN_DRAWFORM_POPUPMENU		(RC_POPUPS_BEGIN + 9)
+
+#if MN_DRAWFORM_POPUPMENU > RC_POPUPS_END
+
+#error Resource-Id Ueberlauf in #file, #line
+#endif
+
+
+#endif // _POPUP_HRC

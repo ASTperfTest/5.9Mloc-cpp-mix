@@ -1,0 +1,121 @@
+#//%2006////////////////////////////////////////////////////////////////////////
+#//
+#// Copyright (c) 2000, 2001, 2002 BMC Software; Hewlett-Packard Development
+#// Company, L.P.; IBM Corp.; The Open Group; Tivoli Systems.
+#// Copyright (c) 2003 BMC Software; Hewlett-Packard Development Company, L.P.;
+#// IBM Corp.; EMC Corporation, The Open Group.
+#// Copyright (c) 2004 BMC Software; Hewlett-Packard Development Company, L.P.;
+#// IBM Corp.; EMC Corporation; VERITAS Software Corporation; The Open Group.
+#// Copyright (c) 2005 Hewlett-Packard Development Company, L.P.; IBM Corp.;
+#// EMC Corporation; VERITAS Software Corporation; The Open Group.
+#// Copyright (c) 2006 Hewlett-Packard Development Company, L.P.; IBM Corp.;
+#// EMC Corporation; Symantec Corporation; The Open Group.
+#//
+#// Permission is hereby granted, free of charge, to any person obtaining a copy
+#// of this software and associated documentation files (the "Software"), to
+#// deal in the Software without restriction, including without limitation the
+#// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+#// sell copies of the Software, and to permit persons to whom the Software is
+#// furnished to do so, subject to the following conditions:
+#// 
+#// THE ABOVE COPYRIGHT NOTICE AND THIS PERMISSION NOTICE SHALL BE INCLUDED IN
+#// ALL COPIES OR SUBSTANTIAL PORTIONS OF THE SOFTWARE. THE SOFTWARE IS PROVIDED
+#// "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+#// LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+#// PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+#// HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+#// ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+#// WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#//
+#//==============================================================================
+include $(PEGASUS_ROOT)/mak/config.mak
+
+DIRS = \
+    Abstract \
+    AnonymousPipe \
+    Array \
+    AutoPtr \
+    AuditLogger \
+    async_callback \
+    AtomicInt \
+    AuthenticationInfo \
+    Base64 \
+    Buffer \
+    CIMError\
+    CIMName \
+    Cimom \
+    ClassDecl \
+    Compare \
+    Config \
+    DateTime \
+    Dir \
+    DynLib \
+    DynamicLibrary \
+    Executor \
+    FileLock \
+    FileSystem \
+    Flavor \
+    Formatter \
+    HashTable \
+    HTTPMessage \
+    InstanceDecl \
+    IndicationFormatter \
+    L10N \
+    L10N/msg \
+    Logger \
+    MessageQueue \
+    MessageQueueService \
+    MessageSerializer \
+    Method \
+    ModuleController \
+    Mutex \
+    Object \
+    ObjectNormalizer \
+    OperationContext \
+    OptionManager \
+    ParamValue \
+    Parameter \
+    Property \
+    Qualifier \
+    QualifierDecl \
+    QualifierList \
+    Reference \
+    Resolve \
+    Scope \
+    SpinLock \
+    Stack \
+    Stopwatch \
+    StrToInstName \
+    String \
+    StringConversion \
+    System \
+    Thread \
+    ThreadPool \
+    TimeValue \
+    ToMof \
+    Tracer \
+    ValidateClass \
+    Value \
+    XmlDump \
+    XmlParser \
+    XmlPrint \
+    XmlReader \
+    List \
+    AsyncQueue \
+    IDFactory \
+    SharedPtr \
+    HostAddress \
+    HostLocator
+    
+
+ifndef PEGASUS_DISABLE_PERFINST
+DIRS += \
+	StatisticalData
+endif
+
+ifeq ($(PEGASUS_ENABLE_SLP),true)
+DIRS += \
+	Attribute
+endif
+
+include $(PEGASUS_ROOT)/mak/recurse.mak

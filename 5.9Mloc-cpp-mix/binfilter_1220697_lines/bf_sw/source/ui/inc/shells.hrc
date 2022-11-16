@@ -1,0 +1,71 @@
+/*************************************************************************
+ *
+ *  OpenOffice.org - a multi-platform office productivity suite
+ *
+ *  $RCSfile: shells.hrc,v $
+ *
+ *  $Revision: 1.4 $
+ *
+ *  last change: $Author: rt $ $Date: 2006/10/28 00:53:01 $
+ *
+ *  The Contents of this file are made available subject to
+ *  the terms of GNU Lesser General Public License Version 2.1.
+ *
+ *
+ *    GNU Lesser General Public License Version 2.1
+ *    =============================================
+ *    Copyright 2005 by Sun Microsystems, Inc.
+ *    901 San Antonio Road, Palo Alto, CA 94303, USA
+ *
+ *    This library is free software; you can redistribute it and/or
+ *    modify it under the terms of the GNU Lesser General Public
+ *    License version 2.1, as published by the Free Software Foundation.
+ *
+ *    This library is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *    Lesser General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Lesser General Public
+ *    License along with this library; if not, write to the Free Software
+ *    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ *    MA  02111-1307  USA
+ *
+ ************************************************************************/
+
+#ifndef _SHELLS_HRC
+#define _SHELLS_HRC
+
+#include "rcid.hrc"
+
+
+#define RID_TEXT_TOOLBOX           (RC_SHELLS_BEGIN +  15)
+#define RID_TOOLS_TOOLBOX          (RC_SHELLS_BEGIN +  23)
+
+#define STR_SHELLNAME_TEXT         (RC_SHELLS_BEGIN +  24)
+#define STR_SHELLNAME_TABLE        (RC_SHELLS_BEGIN +  25)
+#define STR_SHELLNAME_FRAME        (RC_SHELLS_BEGIN +  26)
+#define STR_SHELLNAME_GRAPHIC      (RC_SHELLS_BEGIN +  27)
+#define STR_SHELLNAME_OBJECT       (RC_SHELLS_BEGIN +  28)
+#define STR_SHELLNAME_LIST         (RC_SHELLS_BEGIN +  29)
+#define STR_SHELLNAME_DRAW         (RC_SHELLS_BEGIN +  30)
+#define STR_SHELLNAME_DRAW_TEXT    (RC_SHELLS_BEGIN +  31)
+
+
+#define STR_SHELLNAME_BEZIER       (RC_SHELLS_BEGIN +  34)
+
+
+#define STR_SHELLNAME_DRAWFORM     (RC_SHELLS_BEGIN +  48)
+
+
+
+#define RID_MODULE_TOOLBOX          (RC_SHELLS_BEGIN + 60)
+
+#define SHELLS_ACT_END              RID_MODULE_TOOLBOX
+
+#if SHELLS_ACT_END > RC_SHELLS_END
+#error Resource-Id Ueberlauf in #file, #line
+#endif
+
+#endif
+

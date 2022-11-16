@@ -1,0 +1,147 @@
+/*************************************************************************
+ *
+ *  OpenOffice.org - a multi-platform office productivity suite
+ *
+ *  $RCSfile: res_bmp.hrc,v $
+ *
+ *  $Revision: 1.3 $
+ *
+ *  last change: $Author: rt $ $Date: 2006/10/27 18:30:36 $
+ *
+ *  The Contents of this file are made available subject to
+ *  the terms of GNU Lesser General Public License Version 2.1.
+ *
+ *
+ *    GNU Lesser General Public License Version 2.1
+ *    =============================================
+ *    Copyright 2005 by Sun Microsystems, Inc.
+ *    901 San Antonio Road, Palo Alto, CA 94303, USA
+ *
+ *    This library is free software; you can redistribute it and/or
+ *    modify it under the terms of the GNU Lesser General Public
+ *    License version 2.1, as published by the Free Software Foundation.
+ *
+ *    This library is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *    Lesser General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Lesser General Public
+ *    License along with this library; if not, write to the Free Software
+ *    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ *    MA  02111-1307  USA
+ *
+ ************************************************************************/
+#include "bf_sfx2/sfx.hrc"
+#include "cfgids.hxx"
+
+// -----------
+// - Defines -
+// -----------
+
+#define IMAGE_MASK_STDCOLOR Color{ Red = 0xff00; Green = 0x0000; Blue = 0xff00; }
+#define IMAGE_MASK_STDCOLOR_HC IMAGE_MASK_STDCOLOR
+#define IMAGE_STDBTN_COLOR_HC COL_LIGHTMAGENTA
+
+#define RID_CONTROLS              RID_APP_START+3
+#define RID_IMPRESS_DOCWINDOWICON RID_APP_START+4
+
+#define RID_ALIGNMENT_TBX		RID_APP_START+5
+#define RID_ZOOM_TBX			RID_APP_START+6
+#define RID_CHOOSE_MODE_TBX 	RID_APP_START+8
+
+
+#define RID_TEXT_TBX			RID_APP_START+11
+#define RID_RECTANGLES_TBX   	RID_APP_START+13
+#define RID_ELLIPSES_TBX 		RID_APP_START+15
+#define RID_LINES_TBX   		RID_APP_START+17
+#define RID_3D_OBJECTS_TBX  	RID_APP_START+19
+#define RID_INSERT_TBX   		RID_APP_START+21
+#define RID_POSITION_TBX 		RID_APP_START+23
+#define RID_CONNECTORS_TBX      RID_APP_START+25
+#define RID_ARROWS_TBX   		RID_APP_START+27
+#define RID_DRAW_DOCWINDOWICON  RID_APP_START+28
+#define RID_GRAFFILTERS   		RID_APP_START+29
+#define RID_GRAFFILTERS_TBX   	RID_APP_START+30
+
+
+// Bitmaps fuer TabBar-Modusumschaltung-Buttons
+
+
+// Bitmaps fuer Tree-ListBox im Effekte-TabDialog
+
+// Bimaps fuer ValueSet im EffekteWindow
+
+
+
+
+
+
+
+
+
+
+
+// -----------------------------------------------------------------------------
+
+
+// -----------------------------------------------------------------------------
+// additional effects
+
+
+											
+
+// high contrast images
+
+
+
+
+
+
+// -----------------------------------------------------------------------------
+
+
+/*
+ *	ResourceIDs fuer Popup-Menues brauchen keinen Dummy-String !!!
+ */
+
+
+// Draw (Graphic)
+
+/*
+ * Pointer (Mauszeiger)
+ */
+#define PTR_WATERCAN			RID_APP_START+100
+#define PTR_PENCIL  			RID_APP_START+101
+
+
+/*
+ * Globale Dialog-IDs
+ */
+#define DLG_FONTWORK			RID_APP_START+150
+
+/*
+ *	ResourceIDs fuer Toolboxen nicht aendern, ohne die Strings in
+ *	strings.hrc auf die selben IDs zu setzen (eine Toolbox und sein
+ *	Konfigurationsstring muessen dieselbe ResourceID haben!).
+ */
+
+// --> Jetzt in cfgids.hxx
+/*
+#define _RID_DRAW_TOOLBOX			RID_APP_START+200
+#define _RID_SLIDE_TOOLBOX			RID_APP_START+201
+#define _RID_DRAW_OBJ_TOOLBOX		RID_APP_START+202
+#define _RID_SLIDE_OBJ_TOOLBOX		RID_APP_START+203
+#define _RID_BEZIER_TOOLBOX			RID_APP_START+204
+#define _RID_TEXT_TOOLBOX			RID_APP_START+205
+#define _RID_OUTLINE_TOOLBOX 		RID_APP_START+206
+#define _RID_DRAW_POLYLINEOBJ_POPUP	RID_APP_START+207
+#define _RID_GLUEPOINTS_TOOLBOX		RID_APP_START+208
+*/
+
+
+#define RID_DRAW_SNAPOBJECT_POPUP			RID_APP_START+390
+#define RID_DRAW_GLUEPOINT_POPUP			RID_APP_START+392
+#define RID_DRAW_CONTROL_POPUP				RID_APP_START+393
+#define RID_FORM_CONTROL_POPUP				RID_APP_START+394
+

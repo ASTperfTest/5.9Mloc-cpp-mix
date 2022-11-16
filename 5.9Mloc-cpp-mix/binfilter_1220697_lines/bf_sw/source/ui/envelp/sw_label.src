@@ -1,0 +1,102 @@
+/*************************************************************************
+ *
+ *  OpenOffice.org - a multi-platform office productivity suite
+ *
+ *  $RCSfile: sw_label.src,v $
+ *
+ *  $Revision: 1.5 $
+ *
+ *  last change: $Author: rt $ $Date: 2006/10/28 00:15:33 $
+ *
+ *  The Contents of this file are made available subject to
+ *  the terms of GNU Lesser General Public License Version 2.1.
+ *
+ *
+ *    GNU Lesser General Public License Version 2.1
+ *    =============================================
+ *    Copyright 2005 by Sun Microsystems, Inc.
+ *    901 San Antonio Road, Palo Alto, CA 94303, USA
+ *
+ *    This library is free software; you can redistribute it and/or
+ *    modify it under the terms of the GNU Lesser General Public
+ *    License version 2.1, as published by the Free Software Foundation.
+ *
+ *    This library is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *    Lesser General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Lesser General Public
+ *    License along with this library; if not, write to the Free Software
+ *    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ *    MA  02111-1307  USA
+ *
+ ************************************************************************/
+#define NO_LOCALIZE_EXPORT
+ // #pragma ******************************************************************
+
+ // #include *****************************************************************
+#include "label.hrc"
+#include "globals.hrc"
+#include "helpid.h"
+// ----- defined strings -----------------------------------------------------
+#define LABEL_STRING									\
+	Text [ de ] = "Etiketten" ;                                \
+	Text [ en-US ] = "Labels" ;                    \
+	Text[ pt ] = "Etiquetas";\
+	Text[ ru ] = "Этикетки";\
+	Text[ el ] = "Ετικέτες";\
+	Text[ nl ] = "Etiketten";\
+	Text[ fr ] = "Étiquettes";\
+	Text[ es ] = "Etiquetas";\
+	Text[ fi ] = "Osoitetarrat";\
+	Text[ ca ] = "Etiquetes";\
+	Text[ it ] = "Etichette";\
+	Text[ sk ] = "Štítky";\
+	Text[ da ] = "Etiketter";\
+	Text[ sv ] = "Etiketter";\
+	Text[ pl ] = "Etykiety";\
+	Text[ pt-BR ] = "Etiquetas";\
+	Text[ th ] = "ป้ายชื่อ";\
+	Text[ ja ] = "ラベル書き";\
+	Text[ ko ] = "레이블";\
+	Text[ zh-CN ] = "标签";\
+	Text[ zh-TW ] = "貼標";\
+	Text[ tr ] = "Etiket";\
+	Text[ hi-IN ] = "लेबिलें";\
+	Text[ ar ] = "بطاقات عنونة";\
+	Text[ he ] = "‮מדבקות‬";\
+
+#define BUSINESS_CARD_STRING \
+	Text [ de ] = "Visitenkarten" ;                			\
+	Text [ en-US ] = "Business Cards";              \
+	Text[ pt ] = "Cartões de visita";\
+	Text[ ru ] = "Визитные карточки";\
+	Text[ el ] = "Επαγγελματικές κάρτες";\
+	Text[ nl ] = "Visitekaartjes";\
+	Text[ fr ] = "Cartes de visite";\
+	Text[ es ] = "Tarjetas de visita";\
+	Text[ fi ] = "Käyntikortit";\
+	Text[ ca ] = "Targetes de visita";\
+	Text[ it ] = "Biglietti da visita";\
+	Text[ sk ] = "Vizitky";\
+	Text[ da ] = "Visitkort";\
+	Text[ sv ] = "Visitkort";\
+	Text[ pl ] = "Wizytówki";\
+	Text[ pt-BR ] = "Cartões de Visita";\
+	Text[ th ] = "นามบัตร";\
+	Text[ ja ] = "名刺";\
+	Text[ ko ] = "명함";\
+	Text[ zh-CN ] = "名片";\
+	Text[ zh-TW ] = "名片";\
+	Text[ tr ] = "Meslek Kartları";\
+	Text[ hi-IN ] = "व्यवहार कार्डस";\
+	Text[ ar ] = "بطاقات الزيارة";\
+	Text[ he ] = "‮כרטיסי ביקור‬";\
+
+ // DLG_LAB ------------------------------------------------------------------
+ // TP_LAB_LAB ---------------------------------------------------------------
+#define WIDTH  100
+#define HEIGHT 16
+ // String *******************************************************************
+/********************************************************************/

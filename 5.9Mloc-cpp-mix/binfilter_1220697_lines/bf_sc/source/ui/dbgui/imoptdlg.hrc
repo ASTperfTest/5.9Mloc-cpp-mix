@@ -1,0 +1,51 @@
+/*************************************************************************
+ *
+ *  OpenOffice.org - a multi-platform office productivity suite
+ *
+ *  $RCSfile: imoptdlg.hrc,v $
+ *
+ *  $Revision: 1.2 $
+ *
+ *  last change: $Author: rt $ $Date: 2005/09/07 18:53:21 $
+ *
+ *  The Contents of this file are made available subject to
+ *  the terms of GNU Lesser General Public License Version 2.1.
+ *
+ *
+ *    GNU Lesser General Public License Version 2.1
+ *    =============================================
+ *    Copyright 2005 by Sun Microsystems, Inc.
+ *    901 San Antonio Road, Palo Alto, CA 94303, USA
+ *
+ *    This library is free software; you can redistribute it and/or
+ *    modify it under the terms of the GNU Lesser General Public
+ *    License version 2.1, as published by the Free Software Foundation.
+ *
+ *    This library is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ *    Lesser General Public License for more details.
+ *
+ *    You should have received a copy of the GNU Lesser General Public
+ *    License along with this library; if not, write to the Free Software
+ *    Foundation, Inc., 59 Temple Place, Suite 330, Boston,
+ *    MA  02111-1307  USA
+ *
+ ************************************************************************/
+#include "bf_sc.hrc"
+
+//#define RID_SCDLG_IMPORTOPT 2256
+
+#define BTN_OK			1
+#define BTN_CANCEL		2
+#define BTN_HELP		3
+#define FT_FIELDSEP		4
+#define ED_FIELDSEP		5
+#define FT_TEXTSEP		6
+#define ED_TEXTSEP		7
+#define FT_FONT			8
+#define DDLB_FONT		9
+#define LB_FONT			10
+#define FL_FIELDOPT     11
+#define CB_FIXEDWIDTH   12
+

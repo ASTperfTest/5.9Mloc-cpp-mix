@@ -1,0 +1,37 @@
+*
+!/**/
+!*.*
+*~
+*.a
+*.o
+*.out
+*.iso
+*.qcow2
+*.vdi
+*.vmdk
+*.tmp
+*.d
+*.pyc
+*.ropeproject
+*.xml
+*.img
+*.img.*
+*.gz
+.DS_Store
+nbproject
+dummy.disk
+
+!Dockerfile
+
+/.vagrant
+build/
+build_i686/
+build_x86_64/
+
+# ignore log files in test tree
+test/**/*.log
+
+# cmake related
+CMakeFiles*
+CMakeCache*
+cmake_install.cmake

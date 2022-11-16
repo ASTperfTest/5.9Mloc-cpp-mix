@@ -1,0 +1,50 @@
+﻿{
+    "standards": {},
+
+    "compilers": {},
+
+    "libraries": {
+		"Microsoft": {
+           "__cdecl": "",
+		   "__stdcall": "",
+		   "__clrcall": "",
+		   "__fastcall": "",
+		   "__thiscall": "",
+		   "__vectorcall": "",
+		   "__RPC_USER": "",
+		   "__declspec(arg)": "",
+		   "__try": "try",
+		   "__except": "catch",
+		   "TCHAR_STR_PARAM": "\"%s\"",
+		   "IRC_MAP_ENTRY(class_name, name, member)": "",
+		   "LPGENT(s)": "s",
+		   "_T(s)": "s"
+        },
+		"comctl32" : {
+			"ListView_SetCheckState(hwndLv,iIndex,fCheck)": "ListView_SetItemState(hwndLv,iIndex,fCheck);"
+		}
+	},
+
+    "operating_systems": {},
+
+    "architectures": {},
+
+    "custom": {
+
+        "Project Custom Paths": {
+
+            "global_include_paths": [
+                "miranda-im-v0.9.10-src\\miranda\\src", 
+                "miranda-im-v0.9.10-src\\miranda\\include", 
+                "miranda-im-v0.9.10-src\\miranda\\src\\core", 
+                "miranda-im-v0.9.10-src\\miranda\\include\\mingw", 
+                "miranda-im-v0.9.10-src\\miranda\\plugins\\freeimage\\Source", 
+				"miranda-im-v0.9.10-src\\miranda\\plugins\\freeimage\\Source\\LibJPEG",
+                "miranda-im-v0.9.10-src\\miranda\\plugins\\zlib"
+            ]
+        }
+    }
+}
+
+
+

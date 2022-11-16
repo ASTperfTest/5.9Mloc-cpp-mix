@@ -1,0 +1,66 @@
+// -*- C++ -*-
+// This file is a part of the IncludeOS unikernel - www.includeos.org
+//
+// Copyright 2015 Oslo and Akershus University College of Applied Sciences
+// and Alfred Bratterud
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+#pragma once
+#ifndef INCLUDEOS_COMMON_HEADER
+#define INCLUDEOS_COMMON_HEADER
+
+#if !defined(__cplusplus)
+#error "IncludeOS must be built with a C++ compiler"
+#endif
+
+#ifdef ARCH_X86
+static_assert(sizeof(void*) == 4, "Pointer must match arch");
+#endif
+#ifdef ARCH_X64
+static_assert(sizeof(void*) == 8, "Pointer must match arch");
+#endif
+
+/* BOCHS Break point */
+#define BREAK() __asm__ volatile("xchg %bx,%bx");
+
+/* debugging macros */
+#include "debug"
+#include "info"
+
+#define LIKELY(x)       __builtin_expect(!!(x), 1)
+#define UNLIKELY(x)     __builtin_expect(!!(x), 0)
+
+#include <gsl/gsl>
+
+/* Define our own termination policy for contract   */
+/* violation to generate relevant information about */
+/* the reason for termination.                      */
+#if defined(OS_TERMINATE_ON_CONTRACT_VIOLATION)
+
+#include <cassert>
+
+#define OS_STRINGIFY(x) #x
+
+#undef Expects
+#undef Ensures
+
+#define Expects(cond) \
+  assert(LIKELY(cond) && "OS: Precondition failed")
+
+#define Ensures(cond) \
+  assert(LIKELY(cond) && "OS: Postcondition failed")
+
+#endif //< defined(OS_TERMINATE_ON_CONTRACT_VIOLATION)
+
+#endif //< INCLUDEOS_COMMON_HEADER
